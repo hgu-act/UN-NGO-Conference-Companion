@@ -10,7 +10,7 @@
 angular.module('ngoConferenceCompanionApp')
   .value('sideNavMenu', [
     {
-      url: 'timeline',
+      url: '',
       title: 'Timeline',
       icon: 'timeline'
     },

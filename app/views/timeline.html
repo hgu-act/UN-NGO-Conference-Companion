@@ -1,1 +1,40 @@
-<p>This is the timeline view.</p>
+<md-toolbar md-whiteframe="4">
+  <div class="md-toolbar-tools">
+    <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-sm>
+      <md-icon>menu</md-icon>
+    </md-button>
+    <span class="md-headline" id="toolbar-title">{{toolbarTitle}}</span>
+  </div>
+</md-toolbar>
+<md-content id="primary-col" layout="column">
+  <md-card flex="noshrink">
+    <img ng-src="{{currentEvent.imgSrc}}" class="md-card-image">
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-subhead">On Going Event</span>
+        <span class="md-headline">{{currentEvent.title}}</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <md-icon>access_time</md-icon>
+      <span class="md-caption">{{currentEvent.startDate | date:'HH:mm'}} - {{currentEvent.endDate | date:'HH:mm'}} ({{currentEvent.duration}})</span>
+      <md-icon>place</md-icon>
+      <span class="md-caption">{{currentEvent.place}}</span>
+    </md-card-content>
+  </md-card>
+  <md-card flex="noshrink">
+    <img ng-src="{{nextEvent.imgSrc}}" class="md-card-image">
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-subhead">Next Event</span>
+        <span class="md-headline">{{nextEvent.title}}</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <md-icon>access_time</md-icon>
+      <span class="md-caption">{{nextEvent.startDate | date:'HH:mm'}} - {{nextEvent.endDate | date:'HH:mm'}} ({{nextEvent.duration}})</span>
+      <md-icon ng-if="nextEvent.place !== ''">place</md-icon>
+      <span class="md-caption">{{nextEvent.place}}</span>
+    </md-card-content>
+  </md-card>
+</md-content>

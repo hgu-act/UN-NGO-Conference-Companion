@@ -8,10 +8,27 @@
  * Controller of the ngoConferenceCompanionApp
  */
 angular.module('ngoConferenceCompanionApp')
-  .controller('TimelineCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('TimelineCtrl', function ($scope, timeAgo) {
+    $scope.toolbarTitle = 'Timeline';
+
+    timeAgo.settings.allowFuture = true;
+
+    $scope.nextEvent = {
+      title: 'Lunch',
+      type: 'lunch',
+      startDate: '2016-05-31T12:00',
+      endDate: '2016-05-31T13:30',
+      duration: '90\'',
+      place: '',
+      imgSrc: 'images/lunch.png'
+    };
+    $scope.currentEvent = {
+      title: 'Opening Session',
+      type: 'opening',
+      startDate: '2016-05-31T10:00',
+      endDate: '2016-05-31T12:00',
+      duration: '120\'',
+      place: '300A+300B+300C',
+      imgSrc: 'images/opening-session.png'
+    };
   });

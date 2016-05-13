@@ -16,18 +16,18 @@ angular.module('ngoConferenceCompanionApp')
       $mdSidenav(menuId).toggle();
     };
 
-    $scope.routeAndClose = function (menuId, menuItem) {
+    $scope.routeAndClose = function (menuId, url, title) {
       $mdSidenav(menuId).close();
-      $scope.toolbarTitle = menuItem.title;
-      $location.path(menuItem.url);
+      // $scope.toolbarTitle = title;
+      $location.path(url);
     };
 
     $scope.switchToolbarTitle = function () {
       switch ($location.path()) {
-        case 'timeline':
+        case '/timeline':
           $scope.toolbarTitle = 'Timeline';
           break;
-        case 'schedule':
+        case '/schedule':
           $scope.toolbarTitle = 'Schedule';
           break;
         default:
