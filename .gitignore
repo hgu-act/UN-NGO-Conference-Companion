@@ -194,3 +194,6 @@ jspm_packages
 node_modules/
 
 build/
+
+### Temp ###
+/api/db.json
