@@ -8,10 +8,6 @@
  * Controller of the ngoConferenceCompanionApp
  */
 angular.module('ngoConferenceCompanionApp')
-  .controller('TimelineCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('TimelineCtrl', function ($scope) {
+    $scope.toolbarTitle = 'Timeline'
   });

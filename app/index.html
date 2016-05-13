@@ -23,25 +23,21 @@
       }
     </style>
   </head>
-  <body ng-app="ngoConferenceCompanionApp" ng-controller="AppCtrl" ng-cloak layout="column">
+  <body ng-app="ngoConferenceCompanionApp" ng-controller="AppCtrl" ng-cloak layout="row">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <md-toolbar md-whiteframe="4">
-      <div class="md-toolbar-tools">
-        <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-sm>
-          <md-icon>menu</md-icon>
-        </md-button>
-        <a layout-align-gt-sm="start center" class="md-toolbar-tools"><span class="md-headline" id="toolbar-title">{{toolbarTitle}}</span></a>
-      </div>
-    </md-toolbar>
-
-    <div layout="row" flex class="content-wrapper" id="main">
-      <md-sidenav flex="nogrow" md-whiteframe="4" layout="column" class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+    <md-sidenav class="site-sidenav md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" md-whiteframe="4">
+      <header class="nav-header">
+        <a class="apps-logo" ng-click="routeAndClose('left', '/', 'Home')">
+          <img src="images/site-logo.svg" alt="Logo" />
+        </a>
+      </header>
+      <md-content flex role="navigation">
         <md-list flex layout-align="start center">
-          <md-list-item class="md-1-line" ng-repeat="item in menu" role="link" md-ink-ripple ng-click="routeAndClose('left', item)">
+          <md-list-item class="md-1-line" ng-repeat="item in menu" role="link" md-ink-ripple ng-click="routeAndClose('left', item.url, item.title)">
             <md-icon>{{item.icon}}</md-icon>
             <div class="md-list-item-text">
               <span class="md-body-2">{{item.title}}</span>
@@ -49,10 +45,10 @@
             <span flex></span>
           </md-list-item>
         </md-list>
-      </md-sidenav>
-      <ng-view flex id="primary-col"></ng-view>
-    </div>
+      </md-content>
+    </md-sidenav>
 
+    <ng-view layout="column" tabIndex="-1" role="main" flex class="content-wrapper"></ng-view>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
