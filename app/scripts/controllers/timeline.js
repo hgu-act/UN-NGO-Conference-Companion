@@ -9,5 +9,5 @@
  */
 angular.module('ngoConferenceCompanionApp')
   .controller('TimelineCtrl', function ($scope) {
-    $scope.toolbarTitle = 'Timeline'
+    $scope.toolbarTitle = 'Home'
   });
