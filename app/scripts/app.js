@@ -17,7 +17,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngMaterial'
+    'ngMaterial',
+    'yaru22.angular-timeago'
   ])
   .config(function ($routeProvider) {
     $routeProvider
