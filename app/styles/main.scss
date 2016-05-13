@@ -90,3 +90,11 @@ body {
     border-bottom: 0;
   }
 }
+
+.content-wrapper {
+  position: relative;
+}
+
+#primary-col {
+  overflow: auto;
+}
