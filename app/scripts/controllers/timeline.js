@@ -20,7 +20,7 @@ angular.module('ngoConferenceCompanionApp')
       endDate: '2016-05-31T13:30',
       duration: '90\'',
       place: '',
-      imgSrc: 'images/lunch.png'
+      imgSrc: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/lunch.png'
     };
     $scope.currentEvent = {
       title: 'Opening Session',
@@ -29,6 +29,6 @@ angular.module('ngoConferenceCompanionApp')
       endDate: '2016-05-31T12:00',
       duration: '120\'',
       place: '300A+300B+300C',
-      imgSrc: 'images/opening-session.png'
+      imgSrc: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/opening-session.png'
     };
   });
