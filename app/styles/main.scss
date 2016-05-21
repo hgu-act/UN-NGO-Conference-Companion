@@ -12,10 +12,14 @@
 }
 
 .content-wrapper {
-  //position: relative;
+  position: relative;
 }
 
 #primary-col {
+  overflow: auto;
+}
+
+.tab-body {
   overflow: auto;
 }
 
