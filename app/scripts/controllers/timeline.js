@@ -8,12 +8,13 @@
  * Controller of the ngoConferenceCompanionApp
  */
 angular.module('ngoConferenceCompanionApp')
-  .controller('TimelineCtrl', function ($scope, timeAgo) {
-    $scope.toolbarTitle = 'Timeline';
+  .controller('TimelineCtrl', function (timeAgo) {
+    var timelineVM = this;
+    timelineVM.toolbarTitle = 'Timeline';
 
     timeAgo.settings.allowFuture = true;
 
-    $scope.nextEvent = {
+    timelineVM.nextEvent = {
       title: 'Lunch',
       type: 'lunch',
       startDate: '2016-05-31T12:00',
@@ -22,7 +23,7 @@ angular.module('ngoConferenceCompanionApp')
       place: '',
       imgSrc: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/lunch.png'
     };
-    $scope.currentEvent = {
+    timelineVM.currentEvent = {
       title: 'Opening Session',
       type: 'opening',
       startDate: '2016-05-31T10:00',
