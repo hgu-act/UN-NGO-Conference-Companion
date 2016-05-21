@@ -10,43 +10,33 @@
 angular.module('ngoConferenceCompanionApp')
   .value('sideNavMenu', [
     {
-      url: '',
-      title: 'Timeline',
-      icon: 'timeline'
-    },
-    {
-      url: 'schedule',
-      title: 'Schedule',
+      url: 'timetable',
+      title: 'Timetable',
       icon: 'list'
     },
     {
-      url: '#transportation',
-      title: 'Transportation',
-      icon: 'directions_bus'
+      url: '#concept-note',
+      title: 'Concept Note',
+      icon: 'event_note'
     },
     {
-      url: '#accommodation',
-      title: 'Accommodation',
-      icon: 'hotel'
+      url: '#roundtable',
+      title: 'Roundtable',
+      icon: 'event_seat'
     },
     {
-      url: '#tourism',
-      title: 'Tourism',
-      icon: 'map'
+      url: '#workshop',
+      title: 'Workshop',
+      icon: 'build'
     },
     {
-      url: '#floor-plans',
-      title: 'Floor Plans',
-      icon: 'layers'
+      url: '#exhibits',
+      title: 'Exhibits',
+      icon: 'local_activity'
     },
     {
       url: '#visit-korea',
       title: 'Visit Korea ™',
-      icon: 'link'
-    },
-    {
-      url: '#1330-korea-travel-hotline',
-      title: '1330 Korea Travel Hotline',
-      icon: 'link'
+      icon: 'map'
     }
   ]);
