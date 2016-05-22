@@ -35,6 +35,11 @@ angular
         controller: 'NoticeCtrl',
         controllerAs: 'notice'
       })
+      .when('/timetable', {
+        templateUrl: 'views/timetable.html',
+        controller: 'TimetableCtrl',
+        controllerAs: 'timetable'
+      })
       .otherwise({
         redirectTo: '/'
       });
@@ -66,5 +71,4 @@ angular
       .accentPalette('amber')
       .warnPalette('red')
       .backgroundPalette('grey');
-  })
-;
+  });
