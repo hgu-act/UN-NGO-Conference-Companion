@@ -40,6 +40,18 @@ angular
         controller: 'TimetableCtrl',
         controllerAs: 'timetableVM'
       })
+      .when('/notice/:id', {
+        templateUrl: 'views/noticedetail.html',
+        controller: 'NoticeDetailCtrl',
+        controllerAs: 'detailVM',
+        resolve: {
+          notice: function ($route, resource) {
+            return resource.notice.get({
+              id: $route.current.params.id
+            }).$promise;
+          }
+        }
+      })
       .otherwise({
         redirectTo: '/'
       });
