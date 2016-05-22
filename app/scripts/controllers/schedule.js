@@ -9,6 +9,7 @@
  */
 angular.module('ngoConferenceCompanionApp')
   .controller('ScheduleCtrl', function () {
+    var scheduleVM = this;
     scheduleVM.toolbarTitle = 'Schedule';
     scheduleVM.scheduleDay1 = [
       {

@@ -28,17 +28,17 @@ angular
       .when('/schedule', {
         templateUrl: 'views/schedule.html',
         controller: 'ScheduleCtrl',
-        controllerAs: 'schedule'
+        controllerAs: 'scheduleVM'
       })
       .when('/home', {
         templateUrl: 'views/notice.html',
         controller: 'NoticeCtrl',
-        controllerAs: 'notice'
+        controllerAs: 'noticeVM'
       })
       .when('/timetable', {
         templateUrl: 'views/timetable.html',
         controller: 'TimetableCtrl',
-        controllerAs: 'timetable'
+        controllerAs: 'timetableVM'
       })
       .otherwise({
         redirectTo: '/'

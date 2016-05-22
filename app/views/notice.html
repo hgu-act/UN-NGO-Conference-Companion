@@ -3,41 +3,41 @@
     <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-sm>
       <md-icon>menu</md-icon>
     </md-button>
-    <span class="md-headline" id="toolbar-title">{{notice.toolbarTitle}}</span>
+    <span class="md-headline" id="toolbar-title">{{noticeVM.toolbarTitle}}</span>
   </div>
 </md-toolbar>
 <md-content id="primary-col" layout="column">
   <md-card flex="noshrink">
-    <div class="md-card-image" ng-style="notice.currentEvent.backgroundStyle" layout="row" layout-align="start end">
-      <span class="md-headline" ng-style="notice.cardImgTextStyle">Right Now</span>
+    <div class="md-card-image" ng-style="noticeVM.currentEvent.backgroundStyle" layout="row" layout-align="start end">
+      <span class="md-headline" ng-style="noticeVM.cardImgTextStyle">Right Now</span>
     </div>
     <md-card-title>
       <md-card-title-text>
-        <span class="md-headline">{{notice.currentEvent.title}}</span>
+        <span class="md-headline">{{noticeVM.currentEvent.title}}</span>
       </md-card-title-text>
     </md-card-title>
     <md-card-content>
       <md-icon>access_time</md-icon>
-      <span class="md-caption">{{notice.currentEvent.startDate | date:'HH:mm'}} - {{notice.currentEvent.endDate | date:'HH:mm'}} ({{notice.currentEvent.duration}})</span>
+      <span class="md-caption">{{noticeVM.currentEvent.startDate | date:'HH:mm'}} - {{noticeVM.currentEvent.endDate | date:'HH:mm'}} ({{noticeVM.currentEvent.duration}})</span>
       <md-icon>place</md-icon>
-      <span class="md-caption">{{notice.currentEvent.place}}</span>
+      <span class="md-caption">{{noticeVM.currentEvent.place}}</span>
     </md-card-content>
   </md-card>
 
   <md-card flex="noshrink">
-    <div class="md-card-image" ng-style="notice.nextEvent.backgroundStyle" layout="row" layout-align="start end">
-      <span class="md-headline" ng-style="notice.cardImgTextStyle">Next</span>
+    <div class="md-card-image" ng-style="noticeVM.nextEvent.backgroundStyle" layout="row" layout-align="start end">
+      <span class="md-headline" ng-style="noticeVM.cardImgTextStyle">Next</span>
     </div>
     <md-card-title>
       <md-card-title-text>
-        <span class="md-headline">{{notice.nextEvent.title}}</span>
+        <span class="md-headline">{{noticeVM.nextEvent.title}}</span>
       </md-card-title-text>
     </md-card-title>
     <md-card-content>
       <md-icon>access_time</md-icon>
-      <span class="md-caption">{{notice.nextEvent.startDate | date:'HH:mm'}} - {{notice.nextEvent.endDate | date:'HH:mm'}} ({{notice.nextEvent.duration}})</span>
-      <md-icon ng-if="notice.nextEvent.place !== ''">place</md-icon>
-      <span class="md-caption">{{notice.nextEvent.place}}</span>
+      <span class="md-caption">{{noticeVM.nextEvent.startDate | date:'HH:mm'}} - {{noticeVM.nextEvent.endDate | date:'HH:mm'}} ({{noticeVM.nextEvent.duration}})</span>
+      <md-icon ng-if="noticeVM.nextEvent.place !== ''">place</md-icon>
+      <span class="md-caption">{{noticeVM.nextEvent.place}}</span>
     </md-card-content>
   </md-card>
 </md-content>
