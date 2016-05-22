@@ -40,4 +40,22 @@
       <span class="md-caption">{{noticeVM.nextEvent.place}}</span>
     </md-card-content>
   </md-card>
+
+  <md-card flex="noshrink">
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Notices</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <md-list>
+        <md-list-item class="md-2-line" ng-repeat="item in noticeVM.list | orderBy: '-date'" md-ink-ripple="" ng-href="#notice/{{item.id}}">
+          <div class="md-list-item-text" layout="column">
+            <h3>{{item.title}}</h3>
+            <p>{{item.date | timeAgo}}</p>
+          </div>
+        </md-list-item>
+      </md-list>
+    </md-card-content>
+  </md-card>
 </md-content>
