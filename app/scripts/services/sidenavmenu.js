@@ -15,6 +15,11 @@ angular.module('ngoConferenceCompanionApp')
       icon: 'home'
     },
     {
+      url: 'notice',
+      title: 'Notice',
+      icon: 'announcement'
+    },
+    {
       url: 'timetable',
       title: 'Timetable',
       icon: 'list'
