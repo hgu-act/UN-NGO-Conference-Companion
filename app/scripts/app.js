@@ -23,22 +23,14 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        redirectTo: '/home'
+        templateUrl: 'views/home.html',
+        controller: 'HomeCtrl',
+        controllerAs: 'homeVM'
       })
-      .when('/schedule', {
-        templateUrl: 'views/schedule.html',
-        controller: 'ScheduleCtrl',
-        controllerAs: 'scheduleVM'
-      })
-      .when('/home', {
+      .when('/notice', {
         templateUrl: 'views/notice.html',
         controller: 'NoticeCtrl',
         controllerAs: 'noticeVM'
-      })
-      .when('/timetable', {
-        templateUrl: 'views/timetable.html',
-        controller: 'TimetableCtrl',
-        controllerAs: 'timetableVM'
       })
       .when('/notice/:id', {
         templateUrl: 'views/noticedetail.html',
@@ -52,35 +44,30 @@ angular
           }
         }
       })
+      .when('/timetable', {
+        templateUrl: 'views/timetable.html',
+        controller: 'TimetableCtrl',
+        controllerAs: 'timetableVM'
+      })
       .otherwise({
         redirectTo: '/'
       });
   })
   .config(function ($mdThemingProvider) {
-    $mdThemingProvider.definePalette('blue-ngo', {
-      '50': 'E3F2FD',
-      '100': 'BBDEFB',
-      '200': '90CAF9',
-      '300': '64B5F6',
-      '400': '42A5F5',
+    var blueNgoMap = $mdThemingProvider.extendPalette('blue', {
       '500': '4F8FCC',
-      '600': '1E88E5',
-      '700': '1976D2',
-      '800': '193C6C',
-      '900': '0D47A1',
-      'A100': '82B1FF',
-      'A200': '448AFF',
-      'A400': '2979FF',
-      'A700': '2962FF',
-      'contrastDefaultColor': 'light',    // whether, by default, text (contrast)
-                                          // on this palette should be dark or light
-      'contrastDarkColors': ['50', '100', //hues which contrast should be 'dark' by default
-        '200', '300', '400', 'A100'],
-      'contrastLightColors': undefined    // could also specify this if default was 'dark'
+      '800': '193C6C'
     });
-    $mdThemingProvider.theme('ngo')
-      .primaryPalette('blue-ngo')
+    $mdThemingProvider.definePalette('blue-ngo', blueNgoMap);
+    $mdThemingProvider.theme('default')
+      .primaryPalette('blue-ngo', {
+        'default': '800'
+      })
       .accentPalette('amber')
       .warnPalette('red')
       .backgroundPalette('grey');
+  })
+  .config(function (timeAgoSettings) {
+    var oneDay = 60*60*24;
+    // timeAgoSettings.fullDateAfterSeconds = oneDay;
   });
