@@ -16,6 +16,6 @@ angular.module('ngoConferenceCompanionApp')
     detailVM.toolbarTitle = 'Notice';
 
     function goBack() {
-      $location.path('/');
+      $location.path('/notice');
     }
   });
