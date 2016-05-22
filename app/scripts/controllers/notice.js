@@ -8,14 +8,14 @@
  * Controller of the ngoConferenceCompanionApp
  */
 angular.module('ngoConferenceCompanionApp')
-  .controller('NoticeCtrl', function () {
+  .controller('NoticeCtrl', function (resource, $log, timeAgo) {
     var noticeVM = this;
+
     noticeVM.toolbarTitle = 'Home';
     noticeVM.cardImgTextStyle = {
-      "color": "white",
-      "padding": "16px"
+      'color': 'white',
+      'padding': '16px'
     };
-
     noticeVM.currentEvent = {
       title: 'Opening Session',
       type: 'opening',
@@ -24,11 +24,10 @@ angular.module('ngoConferenceCompanionApp')
       duration: '120\'',
       place: '300A+300B+300C',
       backgroundStyle: {
-        "background": "url('https://s3.ap-northeast-2.amazonaws.com/ngo-app/opening-session.png') center / cover",
-        "height": "176px"
+        'background': 'url("https://s3.ap-northeast-2.amazonaws.com/ngo-app/opening-session.png") center / cover',
+        'height': '176px'
       }
     };
-
     noticeVM.nextEvent = {
       title: 'Lunch',
       type: 'lunch',
@@ -37,8 +36,9 @@ angular.module('ngoConferenceCompanionApp')
       duration: '90\'',
       place: 'Around HICO',
       backgroundStyle: {
-        "background": "url('https://s3.ap-northeast-2.amazonaws.com/ngo-app/lunch.png') center / cover",
-        "height": "176px"
+        'background': 'url("https://s3.ap-northeast-2.amazonaws.com/ngo-app/lunch.png") center / cover',
+        'height': '176px'
       }
     };
+    noticeVM.list = resource.notice.query();
   });

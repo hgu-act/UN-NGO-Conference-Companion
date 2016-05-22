@@ -16,22 +16,9 @@ angular.module('ngoConferenceCompanionApp')
       $mdSidenav(menuId).toggle();
     };
 
-    $scope.routeAndClose = function (menuId, url, title) {
+    $scope.routeAndClose = function (menuId, url) {
       $mdSidenav(menuId).close();
       // $scope.toolbarTitle = title;
       $location.path(url);
     };
-
-    $scope.switchToolbarTitle = function () {
-      switch ($location.path()) {
-        case '/timeline':
-          $scope.toolbarTitle = 'Timeline';
-          break;
-        case '/schedule':
-          $scope.toolbarTitle = 'Schedule';
-          break;
-        default:
-          break;
-      }
-    }
   });
