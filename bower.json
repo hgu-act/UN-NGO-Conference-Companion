@@ -10,8 +10,8 @@
     "angular-resource": "^1.4.0",
     "angular-route": "^1.4.0",
     "angular-sanitize": "^1.4.0",
-    "angular-material": "v1.1.0-rc4-master-afa1e45",
     "angular-timeago": "0.2.9"
+    "angular-material": "v1.1.0-rc4-master-2806ec8",
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"
