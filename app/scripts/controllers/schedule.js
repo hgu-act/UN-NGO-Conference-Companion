@@ -8,9 +8,9 @@
  * Controller of the ngoConferenceCompanionApp
  */
 angular.module('ngoConferenceCompanionApp')
-  .controller('ScheduleCtrl', function ($scope) {
-    $scope.toolbarTitle = 'Schedule';
-    $scope.scheduleDay1 = [
+  .controller('ScheduleCtrl', function () {
+    scheduleVM.toolbarTitle = 'Schedule';
+    scheduleVM.scheduleDay1 = [
       {
         id: 1,
         type: '',
@@ -92,7 +92,7 @@ angular.module('ngoConferenceCompanionApp')
         color: '#EF6C00'
       }
     ];
-    $scope.scheduleDay2 = [
+    scheduleVM.scheduleDay2 = [
       {
         id: 1,
         type: '',
@@ -174,7 +174,7 @@ angular.module('ngoConferenceCompanionApp')
         color: '#EF6C00'
       }
     ];
-    $scope.scheduleDay3 = [
+    scheduleVM.scheduleDay3 = [
       {
         id: 1,
         type: '',
