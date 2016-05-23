@@ -49,6 +49,11 @@ angular
         controller: 'TimetableCtrl',
         controllerAs: 'timetableVM'
       })
+      .when('/concept-note', {
+        templateUrl: 'views/conceptnote.html',
+        controller: 'ConceptNoteCtrl',
+        controllerAs: 'conceptVM'
+      })
       .otherwise({
         redirectTo: '/'
       });
