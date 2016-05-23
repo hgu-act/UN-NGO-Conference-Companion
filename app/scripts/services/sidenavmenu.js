@@ -15,8 +15,8 @@ angular.module('ngoConferenceCompanionApp')
       icon: 'home'
     },
     {
-      url: 'notice',
-      title: 'Notice',
+      url: 'notices',
+      title: 'Notices',
       icon: 'announcement'
     },
     {
@@ -30,13 +30,13 @@ angular.module('ngoConferenceCompanionApp')
       icon: 'event_note'
     },
     {
-      url: 'roundtable',
-      title: 'Roundtable',
+      url: 'roundtables',
+      title: 'Roundtables',
       icon: 'event_seat'
     },
     {
-      url: 'workshop',
-      title: 'Workshop',
+      url: 'workshops',
+      title: 'Workshops',
       icon: 'build'
     },
     {

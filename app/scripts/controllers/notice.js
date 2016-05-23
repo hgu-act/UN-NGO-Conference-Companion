@@ -11,6 +11,6 @@ angular.module('ngoConferenceCompanionApp')
   .controller('NoticeCtrl', function (resource, $log, timeAgo) {
     var noticeVM = this;
 
-    noticeVM.toolbarTitle = 'Notice';
+    noticeVM.toolbarTitle = 'Notices';
     noticeVM.list = resource.notice.query();
   });

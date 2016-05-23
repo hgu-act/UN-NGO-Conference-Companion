@@ -49,7 +49,7 @@
     </md-card-title>
     <md-card-content>
       <md-list>
-        <md-list-item class="md-2-line" ng-repeat="item in homeVM.list | orderBy: '-date'" md-ink-ripple="" ng-href="#notice/{{item.id}}">
+        <md-list-item class="md-2-line" ng-repeat="item in homeVM.list | orderBy: '-date'" md-ink-ripple="" ng-href="#notices/{{item.id}}">
           <md-icon class="md-avatar-icon">announcement</md-icon>
           <div class="md-list-item-text" layout="column">
             <h3>{{item.title}}</h3>

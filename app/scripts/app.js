@@ -27,17 +27,17 @@ angular
         controller: 'HomeCtrl',
         controllerAs: 'homeVM'
       })
-      .when('/notice', {
+      .when('/notices', {
         templateUrl: 'views/notice.html',
         controller: 'NoticeCtrl',
         controllerAs: 'noticeVM'
       })
-      .when('/notice/:id', {
+      .when('/notices/:id', {
         templateUrl: 'views/noticedetail.html',
         controller: 'NoticeDetailCtrl',
         controllerAs: 'detailVM',
         resolve: {
-          notice: function ($route, resource) {
+          noticeObj: function ($route, resource) {
             return resource.notice.get({
               id: $route.current.params.id
             }).$promise;
@@ -53,6 +53,21 @@ angular
         templateUrl: 'views/conceptnote.html',
         controller: 'ConceptNoteCtrl',
         controllerAs: 'conceptVM'
+      })
+      .when('/roundtables', {
+        templateUrl: 'views/roundtable.html',
+        controller: 'RoundtableCtrl',
+        controllerAs: 'roundtableVM'
+      })
+      .when('/roundtables/:id', {
+        templateUrl: 'views/roundtabledetail.html',
+        controller: 'RoundtabledetailCtrl',
+        controllerAs: 'roundtableDetailVM',
+        resolve: {
+          roundtableObj: function ($route, roundtableValue) {
+            return roundtableValue[$route.current.params.id - 1];
+          }
+        }
       })
       .otherwise({
         redirectTo: '/'
