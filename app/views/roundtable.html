@@ -1,0 +1,20 @@
+<md-toolbar md-whiteframe="4">
+  <div class="md-toolbar-tools">
+    <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-sm>
+      <md-icon>menu</md-icon>
+    </md-button>
+    <span class="md-headline" id="toolbar-title">{{roundtableVM.toolbarTitle}}</span>
+  </div>
+</md-toolbar>
+<md-content id="primary-col" layout="column">
+  <md-list>
+    <md-list-item class="md-1-line" ng-click="" ng-repeat="item in roundtableVM.lists" md-ink-ripple ng-href="#roundtables/{{item.id}}" layout="row" layout-align="start center">
+      <md-icon class="md-avatar-icon">event_seat</md-icon>
+      <div class="md-list-item-text" layout="column">
+        <p>{{item.title}}</p>
+      </div>
+      <span flex></span>
+      <md-divider md-inset></md-divider>
+    </md-list-item>
+  </md-list>
+</md-content>
