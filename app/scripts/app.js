@@ -18,7 +18,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngMaterial',
-    'yaru22.angular-timeago'
+    'yaru22.angular-timeago',
+    'ngtweet'
   ])
   .config(function ($routeProvider) {
     $routeProvider
