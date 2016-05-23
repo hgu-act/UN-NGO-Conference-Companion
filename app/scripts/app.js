@@ -65,7 +65,9 @@ angular
         controllerAs: 'roundtableDetailVM',
         resolve: {
           roundtableObj: function ($route, roundtableValue) {
-            return roundtableValue[$route.current.params.id - 1];
+            return roundtableValue.find(function (roundtable) {
+              return roundtable.id == $route.current.params.id;
+            });
           }
         }
       })
@@ -73,6 +75,18 @@ angular
         templateUrl: 'views/workshop.html',
         controller: 'WorkshopCtrl',
         controllerAs: 'workshopVM'
+      })
+      .when('/workshops/:id', {
+        templateUrl: 'views/workshopdetail.html',
+        controller: 'WorkshopdetailCtrl',
+        controllerAs: 'workshopDetailVM',
+        resolve: {
+          workshopObj: function ($route, workshopDetailValue) {
+            return workshopDetailValue.find(function (workshop) {
+              return workshop.id == $route.current.params.id;
+            });
+          }
+        }
       })
       .otherwise({
         redirectTo: '/'

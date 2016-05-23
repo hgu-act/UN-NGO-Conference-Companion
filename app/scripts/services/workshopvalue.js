@@ -14,105 +14,15 @@ angular.module('ngoConferenceCompanionApp')
       workshops: [
         {
           title: 'Workshop 1',
-          id: 101,
-          files: [
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            }
-          ]
+          id: 101
         },
         {
           title: 'Workshop 2',
-          id: 102,
-          files: [
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            }
-          ]
+          id: 102
         },
         {
           title: 'Workshop 3',
-          id: 103,
-          files: [
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            }
-          ]
+          id: 103
         },
         {
           title: 'Workshop 4',
@@ -129,37 +39,7 @@ angular.module('ngoConferenceCompanionApp')
       workshops: [
         {
           title: 'Workshop 1',
-          id: 201,
-          files: [
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            }
-          ]
+          id: 201
         },
         {
           title: 'Workshop 2',
@@ -184,37 +64,7 @@ angular.module('ngoConferenceCompanionApp')
       workshops: [
         {
           title: 'Workshop 1',
-          id: 301,
-          files: [
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            }
-          ]
+          id: 301
         },
         {
           title: 'Workshop 2',
@@ -239,37 +89,7 @@ angular.module('ngoConferenceCompanionApp')
       workshops: [
         {
           title: 'Workshop 1',
-          id: 401,
-          files: [
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            },
-            {
-              url: '',
-              title: 'Example PDF'
-            }
-          ]
+          id: 401
         },
         {
           title: 'Workshop 2',
