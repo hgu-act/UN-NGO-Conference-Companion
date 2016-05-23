@@ -69,6 +69,11 @@ angular
           }
         }
       })
+      .when('/workshops', {
+        templateUrl: 'views/workshop.html',
+        controller: 'WorkshopCtrl',
+        controllerAs: 'workshopVM'
+      })
       .otherwise({
         redirectTo: '/'
       });
