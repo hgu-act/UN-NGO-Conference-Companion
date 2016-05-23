@@ -45,6 +45,11 @@ angular.module('ngoConferenceCompanionApp')
       icon: 'local_activity'
     },
     {
+      url: 'socialize',
+      title: '#UNNGO2016',
+      icon: 'timeline'
+    },
+    {
       url: 'visit-korea',
       title: 'Visit Korea ™',
       icon: 'map'

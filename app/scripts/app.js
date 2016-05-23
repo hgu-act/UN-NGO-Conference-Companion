@@ -88,6 +88,11 @@ angular
           }
         }
       })
+      .when('/socialize', {
+        templateUrl: 'views/socialize.html',
+        controller: 'SocializeCtrl',
+        controllerAs: 'socializeVM'
+      })
       .otherwise({
         redirectTo: '/'
       });
