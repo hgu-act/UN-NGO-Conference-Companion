@@ -77,7 +77,7 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
-          open: true,
+          open: false,
           middleware: function (connect) {
             return [
               connect.static('.tmp'),
@@ -112,7 +112,7 @@ module.exports = function (grunt) {
       },
       dist: {
         options: {
-          open: true,
+          open: false,
           base: '<%= yeoman.dist %>'
         }
       }
@@ -435,15 +435,6 @@ module.exports = function (grunt) {
       server: [
         'compass:server'
       ],
-      jsonServe: {
-        tasks: [
-          'json_server:server',
-          'watch'
-        ],
-        options: {
-          logConcurrentOutput: true
-        }
-      },
       test: [
         'compass'
       ],
@@ -460,20 +451,7 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
-    },
-
-    // db settings
-    json_server: {
-      options: {
-        // Task-specific options go here.
-        port: 3000,
-        db: 'api/db.json'
-      },
-      server: {
-
-      }
     }
-
   });
 
 
@@ -488,7 +466,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'postcss:server',
       'connect:livereload',
-      'concurrent:jsonServe'
+      'watch'
     ]);
   });
 
