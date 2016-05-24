@@ -113,7 +113,6 @@ module.exports = function (grunt) {
       dist: {
         options: {
           open: false,
-          port: 80,
           base: '<%= yeoman.dist %>'
         }
       }
