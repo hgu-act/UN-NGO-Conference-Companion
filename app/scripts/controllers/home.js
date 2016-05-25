@@ -24,7 +24,7 @@ angular.module('ngoConferenceCompanionApp')
       duration: '120\'',
       place: '300A+300B+300C',
       backgroundStyle: {
-        'background': 'url("https://s3.ap-northeast-2.amazonaws.com/ngo-app/opening-session.png") center / cover',
+        'background': 'url("https://s3.ap-northeast-2.amazonaws.com/ngo-app/opening-session.jpg") center / cover',
         'height': '176px'
       }
     };
@@ -36,7 +36,7 @@ angular.module('ngoConferenceCompanionApp')
       duration: '90\'',
       place: 'Around HICO',
       backgroundStyle: {
-        'background': 'url("https://s3.ap-northeast-2.amazonaws.com/ngo-app/lunch.png") center / cover',
+        'background': 'url("https://s3.ap-northeast-2.amazonaws.com/ngo-app/lunch.jpg") center / cover',
         'height': '176px'
       }
     };
