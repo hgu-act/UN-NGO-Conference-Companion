@@ -9,7 +9,7 @@
     {
       name      : "NGO",
       script    : "/Users/wbqd/.nvm/versions/node/v5.11.1/bin/grunt",
-      args      : "['connect:keepalive']",
+      args      : "['serve:dist']",
       env: {
         COMMON_VARIABLE: "true"
       },
@@ -31,19 +31,19 @@
    */
   deploy : {
     production : {
-      user : "node",
-      host : "0.0.0.0",
+      user : "ubuntu",
+      host : "52.78.1.51",
       ref  : "origin/master",
       repo : "git@github.com:hgu-act/UN-NGO-Conference-Companion.git",
       path : "/home/ubuntu/UN-NGO-Conference-Companion",
       "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
     },
     dev : {
-      user : "node",
-      host : "212.83.163.1",
+      user : "ubuntu",
+      host : "52.78.1.51",
       ref  : "origin/master",
-      repo : "git@github.com:repo.git",
-      path : "/var/www/development",
+      repo : "git@github.com:hgu-act/UN-NGO-Conference-Companion.git",
+      path : "/home/ubuntu/UN-NGO-Conference-Companion",
       "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env dev",
       env  : {
         NODE_ENV: "dev"
