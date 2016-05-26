@@ -8,15 +8,16 @@
  * Controller of the ngoConferenceCompanionApp
  */
 angular.module('ngoConferenceCompanionApp')
-  .controller('AppCtrl', function ($scope, $mdSidenav, $location, sideNavMenu) {
-    $scope.menu = sideNavMenu;
-    $scope.toolbarTitle = 'Home';
+  .controller('AppCtrl', function ($mdSidenav, $location, sideNavMenu) {
+    var appVM = this;
+    appVM.menu = sideNavMenu;
+    appVM.backgroundColors = '::{background: \'blue-grey-50\'}';
 
-    $scope.toggleSidenav = function (menuId) {
+    appVM.toggleSidenav = function (menuId) {
       $mdSidenav(menuId).toggle();
     };
 
-    $scope.routeAndClose = function (menuId, url) {
+    appVM.routeAndClose = function (menuId, url) {
       $mdSidenav(menuId).close();
       // $scope.toolbarTitle = title;
       $location.path(url);
