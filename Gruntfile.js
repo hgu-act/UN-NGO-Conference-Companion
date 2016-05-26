@@ -453,6 +453,20 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+
+    // Compress dist js, css, html files
+    compress: {
+      build: {
+        options: {
+          mode: 'gzip',
+          pretty: true
+        },
+        expand: true,
+        cwd: 'dist/',
+        src: ['**/*'],
+        dest: 'dist/'
+      }
     }
   });
 
