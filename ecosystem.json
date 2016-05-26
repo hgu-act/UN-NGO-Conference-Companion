@@ -7,7 +7,7 @@
 
     // First application
     {
-      name      : "NGO",
+      name      : "ngo-app",
       script    : "/Users/wbqd/.nvm/versions/node/v5.11.1/bin/grunt",
       args      : "['serve:dist']",
       env: {
@@ -36,7 +36,7 @@
       ref  : "origin/master",
       repo : "git@github.com:hgu-act/UN-NGO-Conference-Companion.git",
       path : "/home/ubuntu/UN-NGO-Conference-Companion",
-      "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
+      "post-deploy" : "npm install && bower install && pm2 startOrRestart ecosystem.json --env production"
     },
     dev : {
       user : "ubuntu",
