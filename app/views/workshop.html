@@ -7,7 +7,7 @@
   </div>
 </md-toolbar>
 <md-content id="primary-col" layout="column" md-colors="{{appVM.backgroundColors}}" flex="100">
-  <md-tabs class="md-primary" md-dynamic-height md-border-bottom md-stretch-tabs="auto" md-autoselect md-whiteframe="4">
+  <md-tabs class="md-primary" md-dynamic-height md-border-bottom md-stretch-tabs="auto" md-autoselect>
     <md-tab ng-repeat="session in workshopVM.sessions" label="{{session.title}}">
       <md-list>
         <md-list-item class="md-1-line" ng-repeat="item in session.workshops" md-ink-ripple ng-href="#workshops/{{item.id}}">
