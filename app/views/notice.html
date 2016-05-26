@@ -6,7 +6,7 @@
     <span class="md-headline" id="toolbar-title">{{noticeVM.toolbarTitle}}</span>
   </div>
 </md-toolbar>
-<md-content id="primary-col" layout="column">
+<md-content id="primary-col" layout="column" md-colors="{{appVM.backgroundColors}}" flex="100">
   <md-list>
     <md-list-item class="md-2-line" ng-repeat="item in noticeVM.list | orderBy: '-date'" md-ink-ripple ng-href="#notices/{{item.id}}" layout="row">
       <md-icon class="md-avatar-icon">announcement</md-icon>

@@ -6,7 +6,7 @@
     <span class="md-headline" id="toolbar-title">{{roundtableVM.toolbarTitle}}</span>
   </div>
 </md-toolbar>
-<md-content id="primary-col" layout="column">
+<md-content id="primary-col" layout="column" md-colors="{{appVM.backgroundColors}}" flex="100">
   <md-list>
     <md-list-item class="md-1-line" ng-click="" ng-repeat="item in roundtableVM.lists" md-ink-ripple ng-href="#roundtables/{{item.id}}" layout="row" layout-align="start center">
       <md-icon class="md-avatar-icon">event_seat</md-icon>

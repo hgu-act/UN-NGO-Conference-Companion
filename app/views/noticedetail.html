@@ -6,7 +6,7 @@
     <span class="md-headline" id="toolbar-title">{{detailVM.toolbarTitle}}</span>
   </div>
 </md-toolbar>
-<md-content id="primary-col" layout="column" layout-margin>
+<md-content id="primary-col" layout="column" layout-margin md-colors="{{appVM.backgroundColors}}" flex="100">
   <span class="md-headline">{{detailVM.notice.title}}</span>
   <span class="md-subhead">Posted at {{detailVM.notice.date | date:'medium'}}</span>
   <md-divider></md-divider>
