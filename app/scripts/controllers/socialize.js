@@ -15,7 +15,7 @@ angular.module('ngoConferenceCompanionApp')
     socializeVM.twitterOptions = {
       "chrome": "nofooter noheader",
       "aria-polite": "assertive",
-      "width": "720",
-      "height": "1024"
+      "width": "500",
+      "height": "500"
     }
   });

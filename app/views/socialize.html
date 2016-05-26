@@ -9,9 +9,9 @@
 <md-content id="socialize-col" layout="column" flex md-colors="{{appVM.backgroundColors}}">
   <md-tabs class="md-primary" md-dynamic-height md-border-bottom md-stretch-tabs="auto" md-autoselect
            md-swipe-content>
-    <md-tab label="Twitter">
+    <md-tab label="Twitter" md-active="false">
       <div layout="row" layout-align="center start" flex="100">
-        <md-card flex-gt-md="70">
+        <md-card flex-gt-md="nogrow" flex-xs="100">
           <md-card-content>
             <twitter-timeline twitter-timeline-id="'734570190411698176'"
                               twitter-timeline-options='{{socializeVM.twitterOptions}}'>
@@ -20,8 +20,15 @@
         </md-card>
       </div>
     </md-tab>
-    <md-tab label="Facebook">
-
+    <md-tab label="Facebook" md-active="true">
+      <div layout="row" layout-align="center start" flex="100">
+        <md-card flex-gt-md="nogrow" flex-xs="100">
+          <md-card-content>
+            <div class="fb-page" data-href="https://www.facebook.com/66undpingoconference/"
+                 data-width="500" data-height="500" data-hide-cover="true" data-show-facepile="false" data-show-posts="true" data-adapt-container-width="true"></div>
+          </md-card-content>
+        </md-card>
+      </div>
     </md-tab>
   </md-tabs>
 </md-content>

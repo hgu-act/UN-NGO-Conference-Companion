@@ -31,6 +31,7 @@ module.exports = function(config) {
       'bower_components/angular-material/angular-material.js',
       'bower_components/angular-timeago/dist/angular-timeago.js',
       'bower_components/ngtweet/dist/ngtweet.min.js',
+      'bower_components/angular-easyfb/build/angular-easyfb.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

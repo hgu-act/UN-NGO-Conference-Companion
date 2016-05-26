@@ -19,7 +19,8 @@ angular
     'ngSanitize',
     'ngMaterial',
     'yaru22.angular-timeago',
-    'ngtweet'
+    'ngtweet',
+    'ezfb'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -115,4 +116,10 @@ angular
   .config(function (timeAgoSettings) {
     var oneDay = 60*60*24;
     // timeAgoSettings.fullDateAfterSeconds = oneDay;
+  })
+  .config(function (ezfbProvider) {
+    ezfbProvider.setInitParams({
+      appId: '1151504634917069',
+      version: 'v2.6'
+    })
   });
