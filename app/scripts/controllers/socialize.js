@@ -10,6 +10,12 @@
 angular.module('ngoConferenceCompanionApp')
   .controller('SocializeCtrl', function () {
     var socializeVM = this;
-    
+
     socializeVM.toolbarTitle = '#UNNGO2016';
+    socializeVM.twitterOptions = {
+      "chrome": "nofooter noheader",
+      "aria-polite": "assertive",
+      "width": "720",
+      "height": "1024"
+    }
   });
