@@ -22,7 +22,7 @@
           <md-icon>access_time</md-icon>
           <span class="md-caption">{{homeVM.currentEvent.startDate | date:'HH:mm'}} - {{homeVM.currentEvent.endDate | date:'HH:mm'}} ({{homeVM.currentEvent.duration}})</span>
           <md-icon>room</md-icon>
-          <span class="md-caption">{{homeVM.currentEvent.place}}</span>
+          <span class="md-caption">{{homeVM.currentEvent.location}}</span>
         </md-card-content>
       </md-card>
       <md-card flex="noshrink">
@@ -39,7 +39,7 @@
           <md-icon>access_time</md-icon>
           <span class="md-caption">{{homeVM.nextEvent.startDate | date:'HH:mm'}} - {{homeVM.nextEvent.endDate | date:'HH:mm'}} ({{homeVM.nextEvent.duration}})</span>
           <md-icon>room</md-icon>
-          <span class="md-caption">{{homeVM.nextEvent.place}}</span>
+          <span class="md-caption">{{homeVM.nextEvent.location}}</span>
         </md-card-content>
       </md-card>
     </div>

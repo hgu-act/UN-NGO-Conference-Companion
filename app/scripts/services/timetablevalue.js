@@ -18,7 +18,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Youth Caucus',
           startDate: '2016-05-30T08:30',
           endDate: '2016-05-30T09:45',
-          place: '203'
+          location: '203'
         },
         {
           id: 2,
@@ -26,7 +26,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Opening Session',
           startDate: '2016-05-30T10:00',
           endDate: '2016-05-30T12:00',
-          place: '300A\uFF65B'
+          location: '300A\uFF65B'
         },
         {
           id: 3,
@@ -34,7 +34,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Lunch',
           startDate: '2016-05-30T12:00',
           endDate: '2016-05-30T13:30',
-          place: '2\uFF653F Meeting rooms and lobby'
+          location: '2\uFF653F Meeting rooms and lobby'
         },
         {
           id: 4,
@@ -42,7 +42,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Roundtable 1',
           startDate: '2016-05-30T13:30',
           endDate: '2016-05-30T15:00',
-          place: '300A\uFF65B'
+          location: '300A\uFF65B'
         },
         {
           id: 5,
@@ -50,7 +50,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Roundtable 2',
           startDate: '2016-05-30T15:15',
           endDate: '2016-05-30T16:45',
-          place: '300A\uFF65B'
+          location: '300A\uFF65B'
         },
         {
           id: 6,
@@ -58,7 +58,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Townhall Meeting 1',
           startDate: '2016-05-30T15:15',
           endDate: '2016-05-30T16:45',
-          place: '205'
+          location: '205'
         },
         {
           id: 7,
@@ -66,7 +66,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Workshop 1',
           startDate: '2016-05-30T17:30',
           endDate: '2016-05-30T18:45',
-          place: '101 ~ 104, 106, 201 ~ 206, 300A\uFF65B'
+          location: '101 ~ 104, 106, 201 ~ 206, 300A\uFF65B'
         }
       ]
     },
@@ -79,7 +79,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Youth Caucus',
           startDate: '2016-05-31T07:30',
           endDate: '2016-05-31T08:45',
-          place: '205'
+          location: '205'
         },
         {
           id: 2,
@@ -87,7 +87,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Workshop 2',
           startDate: '2016-05-31T09:00',
           endDate: '2016-05-31T10:15',
-          place: '101 ~ 104, 106, 201 ~ 206, 300A\uFF65B'
+          location: '101 ~ 104, 106, 201 ~ 206, 300A\uFF65B'
         },
         {
           id: 3,
@@ -95,7 +95,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Roundtable 3',
           startDate: '2016-05-31T15:15',
           endDate: '2016-05-31T16:45',
-          place: '300A\uFF65B'
+          location: '300A\uFF65B'
         },
         {
           id: 4,
@@ -103,7 +103,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Lunch',
           startDate: '2016-05-31T12:00',
           endDate: '2016-05-31T13:45',
-          place: '2\uFF653F Meeting rooms and lobby'
+          location: '2\uFF653F Meeting rooms and lobby'
         },
         {
           id: 5,
@@ -111,7 +111,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Intergenerational Mentoring Event',
           startDate: '2016-05-31T12:00',
           endDate: '2016-05-31T13:35',
-          place: '101'
+          location: '101'
         },
         {
           id: 6,
@@ -119,7 +119,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Roundtable 4',
           startDate: '2016-05-31T13:45',
           endDate: '2016-05-31T15:15',
-          place: '300A\uFF65B'
+          location: '300A\uFF65B'
         },
         {
           id: 7,
@@ -127,7 +127,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Townhall Meeting 2',
           startDate: '2016-05-31T13:00',
           endDate: '2016-05-31T15:00',
-          place: '205'
+          location: '205'
         },
         {
           id: 8,
@@ -135,7 +135,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Workshop 3',
           startDate: '2016-05-31T15:45',
           endDate: '2016-05-31T17:00',
-          place: '101 ~ 104, 106, 201 ~ 206, 300A\uFF65B'
+          location: '101 ~ 104, 106, 201 ~ 206, 300A\uFF65B'
         },
         {
           id: 9,
@@ -143,7 +143,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Special Roundtable',
           startDate: '2016-05-31T17:15',
           endDate: '2016-05-31T18:45',
-          place: '300A\uFF65B'
+          location: '300A\uFF65B'
         },
         {
           id: 10,
@@ -151,7 +151,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Reception',
           startDate: '2016-05-31T19:00',
           endDate: '2016-05-31T20:30',
-          place: '2\uFF653F Meeting rooms and lobby'
+          location: '2\uFF653F Meeting rooms and lobby'
         }
       ]
     },
@@ -164,7 +164,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Youth Caucus',
           startDate: '2016-06-01T07:30',
           endDate: '2016-06-01T08:45',
-          place: '205'
+          location: '205'
         },
         {
           id: 2,
@@ -172,7 +172,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Workshop 4',
           startDate: '2016-06-01T09:00',
           endDate: '2016-06-01T10:15',
-          place: '101 ~ 104, 106, 201 ~ 206'
+          location: '101 ~ 104, 106, 201 ~ 206'
         },
         {
           id: 3,
@@ -180,7 +180,7 @@ angular.module('ngoConferenceCompanionApp')
           title: 'Closing Session',
           startDate: '2016-06-01T10:30',
           endDate: '2016-06-01T12:30',
-          place: '300A\uFF65B'
+          location: '300A\uFF65B'
         }
       ]
     }
