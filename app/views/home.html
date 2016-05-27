@@ -10,7 +10,9 @@
   <div layout="column" layout-gt-md="row" flex-gt-xs="70" flex-xs="100">
     <div flex-gt-md="40">
       <md-card flex="noshrink">
-        <div class="md-card-image mdl-card" ng-style="{'background-image': 'url({{homeVM.mapper[homeVM.currentEvent.type].cardImgUrl}})'}" layout="row" layout-align="start end">
+        <div class="md-card-image mdl-card"
+             ng-style="{'background-image': 'url({{homeVM.mapper[homeVM.currentEvent.type].cardImgUrl}})'}" layout="row"
+             layout-align="start end">
           <span class="md-headline" ng-style="homeVM.cardImgTextStyle">Right Now</span>
         </div>
         <md-card-title>
@@ -26,7 +28,8 @@
         </md-card-content>
       </md-card>
       <md-card flex="noshrink">
-        <div class="md-card-image mdl-card" ng-style="{'background-image': 'url({{homeVM.mapper[homeVM.nextEvent.type].cardImgUrl}})'}" layout="row"
+        <div class="md-card-image mdl-card"
+             ng-style="{'background-image': 'url({{homeVM.mapper[homeVM.nextEvent.type].cardImgUrl}})'}" layout="row"
              layout-align="start end">
           <span class="md-headline" ng-style="homeVM.cardImgTextStyle">Next</span>
         </div>
@@ -50,19 +53,17 @@
             <span class="md-headline">Notices</span>
           </md-card-title-text>
         </md-card-title>
-        <md-card-content>
-          <md-list>
-            <md-list-item class="md-2-line" ng-repeat="item in homeVM.list | orderBy: '-date'" md-ink-ripple=""
-                          ng-href="#notices/{{item.id}}">
-              <md-icon class="md-avatar-icon">announcement</md-icon>
-              <div class="md-list-item-text" layout="column">
-                <h3>{{item.title}}</h3>
-                <p>{{item.date | timeAgo}}</p>
-              </div>
-              <md-divider md-inset ng-if="!$last"></md-divider>
-            </md-list-item>
-          </md-list>
-        </md-card-content>
+        <md-list>
+          <md-list-item class="md-2-line" ng-repeat="item in homeVM.list | orderBy: '-date'" md-ink-ripple=""
+                        ng-href="#notices/{{item.id}}">
+            <md-icon class="md-avatar-icon">announcement</md-icon>
+            <div class="md-list-item-text" layout="column">
+              <h3>{{item.title}}</h3>
+              <p>{{item.date | timeAgo}}</p>
+            </div>
+            <md-divider md-inset ng-if="!$last"></md-divider>
+          </md-list-item>
+        </md-list>
       </md-card>
     </div>
   </div>
