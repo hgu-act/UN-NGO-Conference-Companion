@@ -11,12 +11,21 @@ angular.module('ngoConferenceCompanionApp')
   .controller('TimetableCtrl', function (timetableValue, mapper) {
     var timetableVM = this;
 
-    timetableVM.activeTab;
+    timetableVM.activeTab = today();
     timetableVM.mapper = mapper;
     timetableVM.timetables = timetableValue;
     timetableVM.toolbarTitle = 'Timetable';
-    
+
     function today() {
       var today = new Date();
+      if (today.getDate() === 30) {
+        return 0;
+      } else if (today.getDate() === 31) {
+        return 1;
+      } else if (today.getDate() === 1) {
+        return 2;
+      } else {
+        return 0;
+      }
     }
   });
