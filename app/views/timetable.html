@@ -11,17 +11,17 @@
            md-swipe-content flex="100" md-selected="timetableVM.activeTab">
     <md-tab ng-repeat="timetable in timetableVM.timetables" label="{{timetable.title}}">
       <md-list flex>
-        <md-list-item class="md-2-line" ng-click="" ng-repeat="item in timetable.schedules">
+        <md-list-item class="md-2-line" ng-repeat="item in timetable.schedules" flex="100">
           <md-icon class="md-avatar-icon" ng-style="{'background-color': timetableVM.mapper[item.type].avatarColor}">
             {{timetableVM.mapper[item.type].icon}}
           </md-icon>
-          <div class="md-list-item-text" layout="row">
+          <div class="md-list-item-text" layout="row" flex="100" layout-margin>
             <div layout="column">
               <p>{{item.startDate | date:'HH:mm'}}</p>
               <p>{{item.endDate | date:'HH:mm'}}</p>
             </div>
-            <div layout="column" flex-offset="10" layout-align="center start">
-              <h3>{{item.title}}</h3>
+            <div layout="column" layout-align="center start" flex="100">
+              <span>{{item.title}}</span>
               <p>{{item.place}}</p>
             </div>
           </div>
