@@ -10,7 +10,7 @@
 angular.module('ngoConferenceCompanionApp')
   .value('timetableValue',[
     {
-      title: '05.30(Mon)',
+      title: '05.30',
       schedules: [
         {
           id: 1,
@@ -71,7 +71,7 @@ angular.module('ngoConferenceCompanionApp')
       ]
     },
     {
-      title: '05.31(Tue)',
+      title: '05.31',
       schedules: [
         {
           id: 1,
@@ -156,7 +156,7 @@ angular.module('ngoConferenceCompanionApp')
       ]
     },
     {
-      title: '06.01(Wed)',
+      title: '06.01',
       schedules: [
         {
           id: 1,
