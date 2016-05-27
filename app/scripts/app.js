@@ -73,20 +73,28 @@ angular
           }
         }
       })
-      .when('/workshops', {
+      .when('/workshops/:id', {
         templateUrl: 'views/workshop.html',
         controller: 'WorkshopCtrl',
-        controllerAs: 'workshopVM'
+        controllerAs: 'workshopVM',
+        resolve: {
+          activeTab: function ($route) {
+            return $route.current.params.id;
+          }
+        }
       })
-      .when('/workshops/:id', {
+      .when('/workshops/:sessionId/:id', {
         templateUrl: 'views/workshopdetail.html',
         controller: 'WorkshopdetailCtrl',
         controllerAs: 'workshopDetailVM',
         resolve: {
-          workshopObj: function ($route, workshopDetailValue) {
-            return workshopDetailValue.find(function (workshop) {
+          workshopObj: function ($route, workshopValue) {
+            return workshopValue[$route.current.params.sessionId].workshops.find(function (workshop) {
               return workshop.id == $route.current.params.id;
             });
+          },
+          sessionId: function ($route) {
+            return $route.current.params.sessionId;
           }
         }
       })

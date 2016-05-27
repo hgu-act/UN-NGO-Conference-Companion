@@ -8,16 +8,15 @@
  * Controller of the ngoConferenceCompanionApp
  */
 angular.module('ngoConferenceCompanionApp')
-  .controller('WorkshopdetailCtrl', function (workshopObj, $location) {
+  .controller('WorkshopdetailCtrl', function (workshopObj, $location, sessionId) {
     var workshopDetailVM = this;
 
     workshopDetailVM.goBack = goBack;
     workshopDetailVM.files = workshopObj.files;
     workshopDetailVM.workshopObj = workshopObj;
-    workshopDetailVM.toolbarTitle = workshopDetailVM.workshopObj.title;
+    workshopDetailVM.toolbarTitle = 'Workshop Info';
 
     function goBack() {
-      $location.path('/workshops');
+      $location.path('/workshops/' + sessionId);
     }
-
   });

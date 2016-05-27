@@ -35,7 +35,7 @@ angular.module('ngoConferenceCompanionApp')
       icon: 'event_seat'
     },
     {
-      url: 'workshops',
+      url: 'workshops/0',
       title: 'Workshops',
       icon: 'build'
     },

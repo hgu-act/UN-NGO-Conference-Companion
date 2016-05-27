@@ -7,14 +7,28 @@
   </div>
 </md-toolbar>
 <md-content id="primary-col" layout="column" md-colors="{{appVM.backgroundColors}}" flex="100">
-  <md-list>
-    <md-list-item class="md-1-line" ng-repeat="item in workshopDetailVM.files" md-ink-ripple ng-href="{{item.url}}" layout="row">
-      <md-icon class="md-avatar-icon">attachment</md-icon>
-      <div class="md-list-item-text" layout="column">
-        <p>{{item.title}}</p>
-      </div>
-      <span flex></span>
-      <md-divider md-inset ng-if="!$last"></md-divider>
-    </md-list-item>
-  </md-list>
+  <md-card>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-title">{{workshopDetailVM.workshopObj.topic}}</span>
+        <span class="md-subhead">{{workshopDetailVM.workshopObj.sponsor}}</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <md-divider></md-divider>
+      <!--<md-subheader>References</md-subheader>-->
+      <p class="md-subhead">References</p>
+    </md-card-content>
+    <md-list>
+      <md-list-item class="md-1-line" ng-repeat="item in workshopDetailVM.files" md-ink-ripple ng-href="{{item.url}}"
+                    layout="row">
+        <md-icon class="md-avatar-icon">attachment</md-icon>
+        <div class="md-list-item-text" layout="column">
+          <p>{{item.title}}</p>
+        </div>
+        <span flex></span>
+        <md-divider md-inset ng-if="!$last"></md-divider>
+      </md-list-item>
+    </md-list>
+  </md-card>
 </md-content>
