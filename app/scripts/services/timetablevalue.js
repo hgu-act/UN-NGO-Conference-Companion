@@ -8,251 +8,180 @@
  * Value in the ngoConferenceCompanionApp.
  */
 angular.module('ngoConferenceCompanionApp')
-  .value('timetableValue', {
-    day1: [
-      {
-        id: 1,
-        type: '',
-        icon: 'record_voice_over',
-        title: 'Opening Session',
-        startDate: '10:00',
-        endDate: '12:00',
-        place: '300A+300B+300C',
-        color: '#2196F3'
-      },
-      {
-        id: 2,
-        type: '',
-        icon: 'local_dining',
-        title: 'Lunch',
-        startDate: '12:00',
-        endDate: '13:30',
-        place: 'Around HICO',
-        color: '#F44336'
-      },
-      {
-        id: 3,
-        type: '',
-        icon: 'event_seat',
-        title: 'Special Roundtable',
-        startDate: '13:30',
-        endDate: '15:00',
-        place: '300A+300B+300C',
-        color: '#9C27B0'
-      },
-      {
-        id: 4,
-        type: '',
-        icon: 'free_breakfast',
-        title: 'Break',
-        startDate: '15:00',
-        endDate: '15:15',
-        place: '',
-        color: '#A1887F'
-      },
-      {
-        id: 5,
-        type: '',
-        icon: 'event_seat',
-        title: 'Roundtable(1)',
-        startDate: '15:15',
-        endDate: '16:45',
-        place: '300A+300B',
-        color: '#9C27B0'
-      },
-      {
-        id: 6,
-        type: '',
-        icon: 'account_balance',
-        title: 'Townhall Meeting(1)',
-        startDate: '15:15',
-        endDate: '16:45',
-        place: '300C',
-        color: '#009688'
-      },
-      {
-        id: 7,
-        type: '',
-        icon: 'free_breakfast',
-        title: 'Break',
-        startDate: '16:45',
-        endDate: '17:15',
-        place: '',
-        color: '#A1887F'
-      },
-      {
-        id: 8,
-        type: '',
-        icon: 'build',
-        title: 'Workshops(1)',
-        startDate: '17:15',
-        endDate: '18:30',
-        place: '101 ~ 106, 201 ~ 205, 300C',
-        color: '#EF6C00'
-      }
-    ],
-    day2: [
-      {
-        id: 1,
-        type: '',
-        icon: 'record_voice_over',
-        title: 'Opening Session',
-        startDate: '10:00',
-        endDate: '12:00',
-        place: '300A+300B+300C',
-        color: '#2196F3'
-      },
-      {
-        id: 2,
-        type: '',
-        icon: 'local_dining',
-        title: 'Lunch',
-        startDate: '12:00',
-        endDate: '13:30',
-        place: 'Around HICO',
-        color: '#F44336'
-      },
-      {
-        id: 3,
-        type: '',
-        icon: 'event_seat',
-        title: 'Special Roundtable',
-        startDate: '13:30',
-        endDate: '15:00',
-        place: '300A+300B+300C',
-        color: '#9C27B0'
-      },
-      {
-        id: 4,
-        type: '',
-        icon: 'free_breakfast',
-        title: 'Break',
-        startDate: '15:00',
-        endDate: '15:15',
-        place: '',
-        color: '#A1887F'
-      },
-      {
-        id: 5,
-        type: '',
-        icon: 'event_seat',
-        title: 'Roundtable(1)',
-        startDate: '15:15',
-        endDate: '16:45',
-        place: '300A+300B',
-        color: '#9C27B0'
-      },
-      {
-        id: 6,
-        type: '',
-        icon: 'account_balance',
-        title: 'Townhall Meeting(1)',
-        startDate: '15:15',
-        endDate: '16:45',
-        place: '300C',
-        color: '#009688'
-      },
-      {
-        id: 7,
-        type: '',
-        icon: 'free_breakfast',
-        title: 'Break',
-        startDate: '16:45',
-        endDate: '17:15',
-        place: '',
-        color: '#A1887F'
-      },
-      {
-        id: 8,
-        type: '',
-        icon: 'build',
-        title: 'Workshops(1)',
-        startDate: '17:15',
-        endDate: '18:30',
-        place: '101 ~ 106, 201 ~ 205, 300C',
-        color: '#EF6C00'
-      }
-    ],
-    day3: [
-      {
-        id: 1,
-        type: '',
-        icon: 'record_voice_over',
-        title: 'Opening Session',
-        startDate: '10:00',
-        endDate: '12:00',
-        place: '300A+300B+300C',
-        color: '#2196F3'
-      },
-      {
-        id: 2,
-        type: '',
-        icon: 'local_dining',
-        title: 'Lunch',
-        startDate: '12:00',
-        endDate: '13:30',
-        place: 'Around HICO',
-        color: '#F44336'
-      },
-      {
-        id: 3,
-        type: '',
-        icon: 'event_seat',
-        title: 'Special Roundtable',
-        startDate: '13:30',
-        endDate: '15:00',
-        place: '300A+300B+300C',
-        color: '#9C27B0'
-      },
-      {
-        id: 4,
-        type: '',
-        icon: 'free_breakfast',
-        title: 'Break',
-        startDate: '15:00',
-        endDate: '15:15',
-        place: '',
-        color: '#A1887F'
-      },
-      {
-        id: 5,
-        type: '',
-        icon: 'event_seat',
-        title: 'Roundtable(1)',
-        startDate: '15:15',
-        endDate: '16:45',
-        place: '300A+300B',
-        color: '#9C27B0'
-      },
-      {
-        id: 6,
-        type: '',
-        icon: 'account_balance',
-        title: 'Townhall Meeting(1)',
-        startDate: '15:15',
-        endDate: '16:45',
-        place: '300C',
-        color: '#009688'
-      },
-      {
-        id: 7,
-        type: '',
-        icon: 'free_breakfast',
-        title: 'Break',
-        startDate: '16:45',
-        endDate: '17:15',
-        place: '',
-        color: '#A1887F'
-      },
-      {
-        id: 8,
-        type: '',
-        icon: 'build',
-        title: 'Workshops(1)',
-        startDate: '17:15',
-        endDate: '18:30',
-        place: '101 ~ 106, 201 ~ 205, 300C',
-        color: '#EF6C00'
-      }
-    ]
-  });
+  .value('timetableValue',[
+    {
+      title: '05.30(Mon)',
+      schedules: [
+        {
+          id: 1,
+          type: 'caucus',
+          title: 'Youth Caucus',
+          startDate: '2016-05-30T08:30',
+          endDate: '2016-05-30T09:45',
+          place: '203'
+        },
+        {
+          id: 2,
+          type: 'opening',
+          title: 'Opening Session',
+          startDate: '2016-05-30T10:00',
+          endDate: '2016-05-30T12:00',
+          place: '300A\uFF65B'
+        },
+        {
+          id: 3,
+          type: 'lunch',
+          title: 'Lunch',
+          startDate: '2016-05-30T12:00',
+          endDate: '2016-05-30T13:30',
+          place: '2\uFF653F Meeting rooms and lobby'
+        },
+        {
+          id: 4,
+          type: 'roundtable',
+          title: 'Roundtable 1',
+          startDate: '2016-05-30T13:30',
+          endDate: '2016-05-30T15:00',
+          place: '300A\uFF65B'
+        },
+        {
+          id: 5,
+          type: 'roundtable',
+          title: 'Roundtable 2',
+          startDate: '2016-05-30T15:15',
+          endDate: '2016-05-30T16:45',
+          place: '300A\uFF65B'
+        },
+        {
+          id: 6,
+          type: 'townhall',
+          title: 'Townhall Meeting 1',
+          startDate: '2016-05-30T15:15',
+          endDate: '2016-05-30T16:45',
+          place: '205'
+        },
+        {
+          id: 7,
+          type: 'workshop',
+          title: 'Workshop 1',
+          startDate: '2016-05-30T17:30',
+          endDate: '2016-05-30T18:45',
+          place: '101 ~ 104, 106, 201 ~ 206, 300A\uFF65B'
+        }
+      ]
+    },
+    {
+      title: '05.31(Tue)',
+      schedules: [
+        {
+          id: 1,
+          type: 'caucus',
+          title: 'Youth Caucus',
+          startDate: '2016-05-31T07:30',
+          endDate: '2016-05-31T08:45',
+          place: '205'
+        },
+        {
+          id: 2,
+          type: 'workshop',
+          title: 'Workshop 2',
+          startDate: '2016-05-31T09:00',
+          endDate: '2016-05-31T10:15',
+          place: '101 ~ 104, 106, 201 ~ 206, 300A\uFF65B'
+        },
+        {
+          id: 3,
+          type: 'roundtable',
+          title: 'Roundtable 3',
+          startDate: '2016-05-31T15:15',
+          endDate: '2016-05-31T16:45',
+          place: '300A\uFF65B'
+        },
+        {
+          id: 4,
+          type: 'lunch',
+          title: 'Lunch',
+          startDate: '2016-05-31T12:00',
+          endDate: '2016-05-31T13:45',
+          place: '2\uFF653F Meeting rooms and lobby'
+        },
+        {
+          id: 5,
+          type: 'mentoring',
+          title: 'Intergenerational Mentoring Event',
+          startDate: '2016-05-31T12:00',
+          endDate: '2016-05-31T13:35',
+          place: '101'
+        },
+        {
+          id: 6,
+          type: 'roundtable',
+          title: 'Roundtable 4',
+          startDate: '2016-05-31T13:45',
+          endDate: '2016-05-31T15:15',
+          place: '300A\uFF65B'
+        },
+        {
+          id: 7,
+          type: 'townhall',
+          title: 'Townhall Meeting 2',
+          startDate: '2016-05-31T13:00',
+          endDate: '2016-05-31T15:00',
+          place: '205'
+        },
+        {
+          id: 8,
+          type: 'workshop',
+          title: 'Workshop 3',
+          startDate: '2016-05-31T15:45',
+          endDate: '2016-05-31T17:00',
+          place: '101 ~ 104, 106, 201 ~ 206, 300A\uFF65B'
+        },
+        {
+          id: 9,
+          type: 'roundtable',
+          title: 'Special Roundtable',
+          startDate: '2016-05-31T17:15',
+          endDate: '2016-05-31T18:45',
+          place: '300A\uFF65B'
+        },
+        {
+          id: 10,
+          type: 'reception',
+          title: 'Reception',
+          startDate: '2016-05-31T19:00',
+          endDate: '2016-05-31T20:30',
+          place: '2\uFF653F Meeting rooms and lobby'
+        }
+      ]
+    },
+    {
+      title: '06.01(Wed)',
+      schedules: [
+        {
+          id: 1,
+          type: 'caucus',
+          title: 'Youth Caucus',
+          startDate: '2016-06-01T07:30',
+          endDate: '2016-06-01T08:45',
+          place: '205'
+        },
+        {
+          id: 2,
+          type: 'workshop',
+          title: 'Workshop 4',
+          startDate: '2016-06-01T09:00',
+          endDate: '2016-06-01T10:15',
+          place: '101 ~ 104, 106, 201 ~ 206'
+        },
+        {
+          id: 3,
+          type: 'closing',
+          title: 'Closing Session',
+          startDate: '2016-06-01T10:30',
+          endDate: '2016-06-01T12:30',
+          place: '300A\uFF65B'
+        }
+      ]
+    }
+  ]);
