@@ -8,11 +8,15 @@
  * Controller of the ngoConferenceCompanionApp
  */
 angular.module('ngoConferenceCompanionApp')
-  .controller('TimetableCtrl', function (timetableValue) {
+  .controller('TimetableCtrl', function (timetableValue, mapper) {
     var timetableVM = this;
 
-    timetableVM.day1 = timetableValue.day1;
-    timetableVM.day2 = timetableValue.day2;
-    timetableVM.day3 = timetableValue.day3;
+    timetableVM.activeTab;
+    timetableVM.mapper = mapper;
+    timetableVM.timetables = timetableValue;
     timetableVM.toolbarTitle = 'Timetable';
+    
+    function today() {
+      var today = new Date();
+    }
   });
