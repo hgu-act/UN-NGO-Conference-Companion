@@ -10,7 +10,7 @@
     "angular-resource": "^1.4.0",
     "angular-route": "^1.4.0",
     "angular-sanitize": "^1.4.0",
-    "angular-material": "v1.1.0-rc4-master-2806ec8",
+    "angular-material": "v1.1.0-rc4-master-c9158c8",
     "angular-timeago": "0.4.1",
     "ngtweet": "^0.4.0",
     "angular-easyfb": "^1.4.4"
