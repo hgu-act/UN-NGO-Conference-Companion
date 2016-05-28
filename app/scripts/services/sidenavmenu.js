@@ -12,7 +12,7 @@ angular.module('ngoConferenceCompanionApp')
     {
       url: 'home',
       title: 'Home',
-      icon: 'home'
+      icon: 'dashboard'
     },
     {
       url: 'notices',
