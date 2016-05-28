@@ -18,10 +18,10 @@ angular.module('ngoConferenceCompanionApp')
           location: '101',
           id: 1,
           files: [
-            {
-              url: '',
-              title: 'Example PDF'
-            }
+            // {
+            //   url: '',
+            //   title: ' '
+            // }
           ]
         },
         {
@@ -30,10 +30,6 @@ angular.module('ngoConferenceCompanionApp')
           location: '102',
           id: 2,
           files: [
-            {
-              url: '',
-              title: 'Example PDF'
-            }
           ]
         },
         {
@@ -44,7 +40,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -115,7 +111,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -127,7 +123,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -139,7 +135,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -151,7 +147,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -163,7 +159,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -175,7 +171,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -187,7 +183,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -199,7 +195,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -211,7 +207,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -223,7 +219,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -235,7 +231,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -247,7 +243,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         }
@@ -264,7 +260,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -276,7 +272,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -288,7 +284,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -300,7 +296,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -312,7 +308,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -324,7 +320,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -336,7 +332,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -348,7 +344,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -360,7 +356,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -372,7 +368,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -384,7 +380,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         }
@@ -401,7 +397,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -413,7 +409,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -425,7 +421,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -437,7 +433,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -449,7 +445,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -461,7 +457,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -473,7 +469,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -485,7 +481,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -497,7 +493,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -509,7 +505,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         },
@@ -521,7 +517,7 @@ angular.module('ngoConferenceCompanionApp')
           files: [
             {
               url: '',
-              title: 'Example PDF'
+              title: ' '
             }
           ]
         }
