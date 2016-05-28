@@ -11,11 +11,12 @@
            md-selected="workshopVM.activeTab" flex="100">
     <md-tab ng-repeat="session in workshopVM.sessions" label="{{session.title}}">
       <md-list flex>
-        <md-list-item class="md-2-line" ng-repeat="item in session.workshops" md-ink-ripple
+        <md-list-item class="md-3-line" ng-repeat="item in session.workshops" md-ink-ripple
                       href="#workshops/{{workshopVM.activeTab}}/{{item.id}}">
           <md-icon class="md-avatar-icon">build</md-icon>
           <div class="md-list-item-text">
-            <h3>{{item.sponsor}}</h3>
+            <h3>{{item.topic}}</h3>
+            <h4>{{item.sponsor}}</h4>
             <p>{{item.location}}</p>
           </div>
           <span flex></span>

@@ -10,17 +10,16 @@
   <md-card>
     <md-card-title>
       <md-card-title-text>
-        <span class="md-title">{{workshopDetailVM.workshopObj.topic}}</span>
+        <span class="md-headline">{{workshopDetailVM.workshopObj.topic}}</span>
         <span class="md-subhead">{{workshopDetailVM.workshopObj.sponsor}}</span>
       </md-card-title-text>
     </md-card-title>
     <md-card-content>
       <md-divider></md-divider>
-      <!--<md-subheader>References</md-subheader>-->
-      <p class="md-subhead">References</p>
     </md-card-content>
-    <md-list>
-      <md-list-item class="md-1-line" ng-repeat="item in workshopDetailVM.files" md-ink-ripple ng-href="{{item.url}}"
+    <md-list class="md-dense" flex>
+      <md-subheader class="md-no-sticky">References</md-subheader>
+      <md-list-item class="md-2-line" ng-repeat="item in workshopDetailVM.files" md-ink-ripple ng-href="{{item.url}}"
                     layout="row">
         <md-icon class="md-avatar-icon">attachment</md-icon>
         <div class="md-list-item-text" layout="column">
