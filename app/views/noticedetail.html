@@ -10,5 +10,5 @@
   <span class="md-headline">{{detailVM.notice.title}}</span>
   <span class="md-subhead">Posted at {{detailVM.notice.date | date:'medium'}}</span>
   <md-divider></md-divider>
-  <p>{{detailVM.notice.body}}</p>
+  <p ng-bind-html="detailVM.notice.body"></p>
 </md-content>
