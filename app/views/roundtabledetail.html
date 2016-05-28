@@ -6,15 +6,29 @@
     <span class="md-headline" id="toolbar-title">{{roundtableDetailVM.toolbarTitle}}</span>
   </div>
 </md-toolbar>
-<md-content id="primary-col" layout="column" md-colors="{{appVM.backgroundColors}}" flex="100">
-  <md-list>
-    <md-list-item class="md-1-line" ng-repeat="item in roundtableDetailVM.files" md-ink-ripple ng-href="{{item.url}}" layout="row">
-      <md-icon class="md-avatar-icon">attachment</md-icon>
-      <div class="md-list-item-text" layout="column">
-        <p>{{item.title}}</p>
-      </div>
-      <span flex></span>
-      <md-divider md-inset ng-if="!$last"></md-divider>
-    </md-list-item>
-  </md-list>
+<md-content id="primary-col" layout="row" md-colors="{{appVM.backgroundColors}}" flex="100" layout-align="center start">
+  <md-card flex="100" flex-gt-md="70">
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">{{roundtableDetailVM.roundtableObj.topic}}</span>
+        <span class="md-subhead" ng-if="roundtableDetailVM.roundtableObj.subtitle">{{roundtableDetailVM.roundtableObj.subtitle}}</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <md-divider></md-divider>
+      <p class="md-body-1" ng-bind-html="roundtableDetailVM.roundtableObj.detail"></p>
+    </md-card-content>
+    <md-list class="md-dense" flex>
+      <md-subheader class="md-no-sticky">References</md-subheader>
+      <md-list-item flex class="md-2-line" ng-repeat="item in roundtableDetailVM.files" md-ink-ripple ng-href="{{item.url}}"
+                    layout="row">
+        <md-icon class="md-avatar-icon">{{item.icon}}</md-icon>
+        <div class="md-list-item-text" layout="column">
+          <p class="">{{item.title}}</p>
+        </div>
+        <span flex></span>
+        <md-divider md-inset ng-if="!$last"></md-divider>
+      </md-list-item>
+    </md-list>
+  </md-card>
 </md-content>

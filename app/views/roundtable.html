@@ -8,10 +8,11 @@
 </md-toolbar>
 <md-content id="primary-col" layout="column" md-colors="{{appVM.backgroundColors}}" flex="100">
   <md-list>
-    <md-list-item class="md-1-line" ng-click="" ng-repeat="item in roundtableVM.lists" md-ink-ripple ng-href="#roundtables/{{item.id}}" layout="row" layout-align="start center">
+    <md-list-item class="md-2-line" ng-repeat="item in roundtableVM.lists" md-ink-ripple ng-href="#roundtables/{{item.id}}" layout="row" layout-align="start center">
       <md-icon class="md-avatar-icon">event_seat</md-icon>
       <div class="md-list-item-text" layout="column">
-        <p>{{item.title}}</p>
+        <h3>{{item.title}}</h3>
+        <h4 class="md-caption">{{item.topic}}</h4>
       </div>
       <span flex></span>
       <md-divider md-inset ng-if="!$last"></md-divider>
