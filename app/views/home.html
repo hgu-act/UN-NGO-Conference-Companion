@@ -8,6 +8,29 @@
 </md-toolbar>
 <md-content id="primary-col" layout="row" layout-align="center start" md-colors="{{appVM.backgroundColors}}" flex="100">
   <div layout="column" layout-gt-md="row" flex-gt-xs="70" flex-xs="100">
+    <div flex-gt-md="60">
+      <md-card>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Recent Notices</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-list>
+          <md-list-item class="md-2-line" ng-repeat="item in homeVM.list | orderBy: '-date' | limitTo: 3" md-ink-ripple=""
+                        ng-href="#notices/{{item.id}}">
+            <md-icon class="md-avatar-icon">announcement</md-icon>
+            <div class="md-list-item-text" layout="column">
+              <h3>{{item.title}}</h3>
+              <p>{{item.date | timeAgo}}</p>
+            </div>
+            <md-divider md-inset ng-if="!$last"></md-divider>
+          </md-list-item>
+        </md-list>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button class="md-primary" ng-href="#notices">More</md-button>
+        </md-card-actions>
+      </md-card>
+    </div>
     <div flex-gt-md="40">
       <md-card flex="noshrink">
         <div class="md-card-image mdl-card"
@@ -22,7 +45,7 @@
         </md-card-title>
         <md-card-content>
           <md-icon>access_time</md-icon>
-          <span class="md-caption">{{homeVM.currentEvent.startDate | date:'HH:mm'}} - {{homeVM.currentEvent.endDate | date:'HH:mm'}} ({{homeVM.currentEvent.duration}})</span>
+          <span class="md-caption">{{homeVM.currentEvent.startDate | date:'HH:mm'}} - {{homeVM.currentEvent.endDate | date:'HH:mm'}} ({{homeVM.currentDuration}}')</span>
           <md-icon>room</md-icon>
           <span class="md-caption">{{homeVM.currentEvent.location}}</span>
         </md-card-content>
@@ -40,30 +63,10 @@
         </md-card-title>
         <md-card-content>
           <md-icon>access_time</md-icon>
-          <span class="md-caption">{{homeVM.nextEvent.startDate | date:'HH:mm'}} - {{homeVM.nextEvent.endDate | date:'HH:mm'}} ({{homeVM.nextEvent.duration}})</span>
+          <span class="md-caption">{{homeVM.nextEvent.startDate | date:'HH:mm'}} - {{homeVM.nextEvent.endDate | date:'HH:mm'}} ({{homeVM.nextDuration}}')</span>
           <md-icon>room</md-icon>
           <span class="md-caption">{{homeVM.nextEvent.location}}</span>
         </md-card-content>
-      </md-card>
-    </div>
-    <div flex-gt-md="60">
-      <md-card>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">Notices</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-list>
-          <md-list-item class="md-2-line" ng-repeat="item in homeVM.list | orderBy: '-date'" md-ink-ripple=""
-                        ng-href="#notices/{{item.id}}">
-            <md-icon class="md-avatar-icon">announcement</md-icon>
-            <div class="md-list-item-text" layout="column">
-              <h3>{{item.title}}</h3>
-              <p>{{item.date | timeAgo}}</p>
-            </div>
-            <md-divider md-inset ng-if="!$last"></md-divider>
-          </md-list-item>
-        </md-list>
       </md-card>
     </div>
   </div>
