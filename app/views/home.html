@@ -16,7 +16,8 @@
           </md-card-title-text>
         </md-card-title>
         <md-list>
-          <md-list-item class="md-2-line" ng-repeat="item in homeVM.list | orderBy: '-date' | limitTo: 3" md-ink-ripple=""
+          <md-list-item class="md-2-line" ng-repeat="item in homeVM.list | orderBy: '-date' | limitTo: 3"
+                        md-ink-ripple=""
                         ng-href="#notices/{{item.id}}">
             <md-icon class="md-avatar-icon">announcement</md-icon>
             <div class="md-list-item-text" layout="column">
@@ -49,8 +50,11 @@
           <md-icon>room</md-icon>
           <span class="md-caption">{{homeVM.currentEvent.location}}</span>
         </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button class="md-primary" ng-href="#timetable">More</md-button>
+        </md-card-actions>
       </md-card>
-      <md-card flex="noshrink">
+      <md-card flex="noshrink" ng-href="#timetable">
         <div class="md-card-image mdl-card"
              ng-style="{'background-image': 'url({{homeVM.mapper[homeVM.nextEvent.type].cardImgUrl}})'}" layout="row"
              layout-align="start end">
@@ -67,6 +71,9 @@
           <md-icon>room</md-icon>
           <span class="md-caption">{{homeVM.nextEvent.location}}</span>
         </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button class="md-primary" ng-href="#timetable">More</md-button>
+        </md-card-actions>
       </md-card>
     </div>
   </div>
