@@ -108,6 +108,11 @@ angular
         controller: 'ExhibitsCtrl',
         controllerAs: 'exhibitsVM'
       })
+      .when('/floor-plan', {
+        templateUrl: 'views/floorplan.html',
+        controller: 'FloorplanCtrl',
+        controllerAs: 'floorVM'
+      })
       .otherwise({
         redirectTo: '/'
       });

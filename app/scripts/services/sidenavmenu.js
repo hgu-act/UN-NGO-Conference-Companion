@@ -45,6 +45,11 @@ angular.module('ngoConferenceCompanionApp')
       icon: 'local_activity'
     },
     {
+      url: 'floor-plan',
+      title: 'Floor Plan',
+      icon: 'layers'
+    },
+    {
       url: 'socialize',
       title: '#UNNGO2016',
       icon: 'timeline'
