@@ -103,6 +103,11 @@ angular
         controller: 'SocializeCtrl',
         controllerAs: 'socializeVM'
       })
+      .when('/exhibits', {
+        templateUrl: 'views/exhibits.html',
+        controller: 'ExhibitsCtrl',
+        controllerAs: 'exhibitsVM'
+      })
       .otherwise({
         redirectTo: '/'
       });
