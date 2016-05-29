@@ -22,4 +22,12 @@ angular.module('ngoConferenceCompanionApp')
       // $scope.toolbarTitle = title;
       $location.path(url);
     };
+
+    appVM.closeSidenav = function (menuId) {
+      $mdSidenav(menuId).close();
+    };
+
+    appVM.openSidenav = function (menuId) {
+      $mdSidenav(menuId).open();
+    };
   });

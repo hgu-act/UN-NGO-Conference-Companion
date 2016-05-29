@@ -34,7 +34,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <md-sidenav class="site-sidenav md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" md-whiteframe="4">
+    <md-sidenav class="site-sidenav md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" md-whiteframe="4" md-swipe-left="appVM.closeSidenav('left')">
       <header class="nav-header">
         <a class="apps-logo" ng-click="appVM.routeAndClose('left', '/', 'Home')">
           <img src="https://s3.ap-northeast-2.amazonaws.com/ngo-app/site-logo.svg" alt="Logo" />
@@ -61,7 +61,7 @@
       </md-content>
     </md-sidenav>
 
-    <ng-view layout="column" tabIndex="-1" role="main" flex class="content-wrapper"></ng-view>
+    <ng-view layout="column" tabIndex="-1" role="main" flex class="content-wrapper" md-swipe-right="appVM.openSidenav('left')"></ng-view>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
