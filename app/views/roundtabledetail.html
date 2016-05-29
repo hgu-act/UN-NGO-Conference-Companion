@@ -21,8 +21,8 @@
     <md-list class="md-dense" flex>
       <md-subheader class="md-no-sticky">References</md-subheader>
       <md-list-item flex class="md-2-line" ng-repeat="item in roundtableDetailVM.files" md-ink-ripple ng-href="{{item.url}}"
-                    layout="row">
-        <md-icon class="md-avatar-icon">{{item.icon}}</md-icon>
+                    layout="row" target="_blank">
+        <md-icon class="md-avatar-icon" md-colors="::{'backgroundColor': 'accent-A200'}">{{item.icon}}</md-icon>
         <div class="md-list-item-text" layout="column">
           <p class="">{{item.title}}</p>
         </div>

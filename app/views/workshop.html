@@ -13,7 +13,7 @@
       <md-list flex>
         <md-list-item class="md-3-line" ng-repeat="item in session.workshops" md-ink-ripple
                       href="#workshops/{{workshopVM.activeTab}}/{{item.id}}">
-          <md-icon class="md-avatar-icon">build</md-icon>
+          <md-icon class="md-avatar-icon" md-colors="::{'backgroundColor': 'primary-500'}">build</md-icon>
           <div class="md-list-item-text">
             <h3>{{item.topic}}</h3>
             <h4>{{item.sponsor}}</h4>
