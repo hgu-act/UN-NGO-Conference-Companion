@@ -4,7 +4,7 @@
     {
       "name"      : "ngo-app",
       "script"    : "/home/ubuntu/.nvm/versions/node/v5.11.1/bin/grunt",
-      "args"      : "['serve:dist']",
+      "args"      : "serve:dist",
       "env": {
         "COMMON_VARIABLE": "true"
       },
