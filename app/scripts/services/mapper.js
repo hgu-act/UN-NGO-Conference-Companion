@@ -53,5 +53,11 @@ angular.module('ngoConferenceCompanionApp')
       icon: 'mic',
       avatarColor: '#192546',
       cardImgUrl: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/assets/closing-session.png'
-    }
+    },
+    docx: 'text_fields',
+    pdf: 'picture_as_pdf',
+    pptx: 'slideshow',
+    hwp: 'text_fields',
+    youtube: 'subscriptions',
+    soundcloud: 'library_music'
   });
