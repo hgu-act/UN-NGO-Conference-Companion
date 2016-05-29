@@ -8,14 +8,15 @@
  * Controller of the ngoConferenceCompanionApp
  */
 angular.module('ngoConferenceCompanionApp')
-  .controller('NoticeDetailCtrl', function (noticeObj, $location, timeAgo) {
+  .controller('NoticeDetailCtrl', function (noticeObj, $location, timeAgo, notices) {
     var detailVM = this;
 
     detailVM.goBack = goBack;
     detailVM.notice = noticeObj;
-    detailVM.toolbarTitle = 'Notice';
+    detailVM.toolbarTitle = 'Notices';
+    detailVM.list = notices;
 
     function goBack() {
-      $location.path('/notice');
+      $location.path('/notices');
     }
   });

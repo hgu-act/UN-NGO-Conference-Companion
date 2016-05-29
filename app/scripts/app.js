@@ -32,7 +32,12 @@ angular
       .when('/notices', {
         templateUrl: 'views/notice.html',
         controller: 'NoticeCtrl',
-        controllerAs: 'noticeVM'
+        controllerAs: 'noticeVM',
+        resolve: {
+          notices: function (resource) {
+            return resource.notice.query().$promise;
+          }
+        }
       })
       .when('/notices/:id', {
         templateUrl: 'views/noticedetail.html',
@@ -43,6 +48,9 @@ angular
             return resource.notice.get({
               id: $route.current.params.id
             }).$promise;
+          },
+          notices: function (resource) {
+            return resource.notice.query().$promise;
           }
         }
       })
