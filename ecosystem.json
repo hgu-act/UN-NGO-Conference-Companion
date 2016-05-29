@@ -8,7 +8,7 @@
     // First application
     {
       name      : "ngo-app",
-      script    : "/Users/wbqd/.nvm/versions/node/v5.11.1/bin/grunt",
+      script    : "grunt",
       args      : "['serve:dist']",
       env: {
         COMMON_VARIABLE: "true"
@@ -16,12 +16,6 @@
       env_production : {
         NODE_ENV: "production"
       }
-    },
-
-    // Second application
-    {
-      name      : "WEB",
-      script    : "web.js"
     }
   ],
 
@@ -31,10 +25,11 @@
    */
   deploy : {
     production : {
+      key  : "/Users/wbqd/.ssh/ngo-app.pem",
       user : "ubuntu",
       host : "52.78.1.51",
       ref  : "origin/master",
-      repo : "git@github.com:hgu-act/UN-NGO-Conference-Companion.git",
+      repo : "https://github.com/hgu-act/UN-NGO-Conference-Companion.git",
       path : "/home/ubuntu/UN-NGO-Conference-Companion",
       "post-deploy" : "npm install && bower install && pm2 startOrRestart ecosystem.json --env production"
     },
