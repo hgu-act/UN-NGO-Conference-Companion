@@ -33,7 +33,7 @@
       </md-card>
     </div>
     <div flex-gt-md="40">
-      <md-card flex="noshrink">
+      <md-card flex="noshrink" ng-if="homeVM.currentEvent">
         <div class="md-card-image mdl-card"
              ng-style="{'background-image': 'url({{homeVM.mapper[homeVM.currentEvent.type].cardImgUrl}})'}" layout="row"
              layout-align="start end">
@@ -46,7 +46,7 @@
         </md-card-title>
         <md-card-content>
           <md-icon>access_time</md-icon>
-          <span class="md-caption">{{homeVM.currentEvent.startDate | date:'HH:mm'}} - {{homeVM.currentEvent.endDate | date:'HH:mm'}} ({{homeVM.currentDuration}}')</span>
+          <span class="md-caption">{{homeVM.currentEvent.startDate | date:'EEE, MMM d, HH:mm'}} - {{homeVM.currentEvent.endDate | date:'HH:mm'}} ({{homeVM.currentDuration}}')</span>
           <md-icon>room</md-icon>
           <span class="md-caption">{{homeVM.currentEvent.location}}</span>
         </md-card-content>
@@ -54,7 +54,49 @@
           <md-button class="md-primary" ng-href="#timetable">More</md-button>
         </md-card-actions>
       </md-card>
-      <md-card flex="noshrink" ng-href="#timetable">
+      <md-card flex="noshrink" ng-if="homeVM.currentEventTwo">
+        <div class="md-card-image mdl-card"
+             ng-style="{'background-image': 'url({{homeVM.mapper[homeVM.currentEventTwo.type].cardImgUrl}})'}" layout="row"
+             layout-align="start end">
+          <span class="md-headline" ng-style="homeVM.cardImgTextStyle">Live Now</span>
+        </div>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">{{homeVM.currentEventTwo.title}}</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          <md-icon>access_time</md-icon>
+          <span class="md-caption">{{homeVM.currentEventTwo.startDate | date:'EEE, MMM d, HH:mm'}} - {{homeVM.currentEventTwo.endDate | date:'HH:mm'}} ({{homeVM.currentTwoDuration}}')</span>
+          <md-icon>room</md-icon>
+          <span class="md-caption">{{homeVM.currentEventTwo.location}}</span>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button class="md-primary" ng-href="#timetable">More</md-button>
+        </md-card-actions>
+      </md-card>
+      <md-card flex="noshrink" ng-if="homeVM.currentEventThree">
+        <div class="md-card-image mdl-card"
+             ng-style="{'background-image': 'url({{homeVM.mapper[homeVM.currentEventThree.type].cardImgUrl}})'}" layout="row"
+             layout-align="start end">
+          <span class="md-headline" ng-style="homeVM.cardImgTextStyle">Live Now</span>
+        </div>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">{{homeVM.currentEventThree.title}}</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          <md-icon>access_time</md-icon>
+          <span class="md-caption">{{homeVM.currentEventThree.startDate | date:'EEE, MMM d, HH:mm'}} - {{homeVM.currentEventThree.endDate | date:'HH:mm'}} ({{homeVM.currentThreeDuration}}')</span>
+          <md-icon>room</md-icon>
+          <span class="md-caption">{{homeVM.currentEventThree.location}}</span>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button class="md-primary" ng-href="#timetable">More</md-button>
+        </md-card-actions>
+      </md-card>
+      <md-card flex="noshrink" ng-if="homeVM.nextEvent">
         <div class="md-card-image mdl-card"
              ng-style="{'background-image': 'url({{homeVM.mapper[homeVM.nextEvent.type].cardImgUrl}})'}" layout="row"
              layout-align="start end">
@@ -67,7 +109,7 @@
         </md-card-title>
         <md-card-content>
           <md-icon>access_time</md-icon>
-          <span class="md-caption">{{homeVM.nextEvent.startDate | date:'HH:mm'}} - {{homeVM.nextEvent.endDate | date:'HH:mm'}} ({{homeVM.nextDuration}}')</span>
+          <span class="md-caption">{{homeVM.nextEvent.startDate | date:'EEE, MMM d, HH:mm'}} - {{homeVM.nextEvent.endDate | date:'HH:mm'}} ({{homeVM.nextDuration}}')</span>
           <md-icon>room</md-icon>
           <span class="md-caption">{{homeVM.nextEvent.location}}</span>
         </md-card-content>
