@@ -1,47 +1,38 @@
 {
-  /**
-   * Application configuration section
-   * http://pm2.keymetrics.io/docs/usage/application-declaration/
-   */
-  apps : [
+  "apps" : [
 
-    // First application
     {
-      name      : "ngo-app",
-      script    : "grunt",
-      args      : "['serve:dist']",
-      env: {
-        COMMON_VARIABLE: "true"
+      "name"      : "ngo-app",
+      "script"    : "grunt",
+      "args"      : "['serve:dist']",
+      "env": {
+        "COMMON_VARIABLE": "true"
       },
-      env_production : {
-        NODE_ENV: "production"
+      "env_production" : {
+        "NODE_ENV": "production"
       }
     }
   ],
 
-  /**
-   * Deployment section
-   * http://pm2.keymetrics.io/docs/usage/deployment/
-   */
-  deploy : {
-    production : {
-      key  : "/Users/wbqd/.ssh/ngo-app.pem",
-      user : "ubuntu",
-      host : "52.78.1.51",
-      ref  : "origin/master",
-      repo : "https://github.com/hgu-act/UN-NGO-Conference-Companion.git",
-      path : "/home/ubuntu/UN-NGO-Conference-Companion",
+  "deploy" : {
+    "production" : {
+      "key"  : "/Users/wbqd/.ssh/ngo-app.pem",
+      "user" : "ubuntu",
+      "host" : "52.78.1.51",
+      "ref"  : "origin/master",
+      "repo" : "https://github.com/hgu-act/UN-NGO-Conference-Companion.git",
+      "path" : "/home/ubuntu/UN-NGO-Conference-Companion",
       "post-deploy" : "npm install && bower install && pm2 startOrRestart ecosystem.json --env production"
     },
-    dev : {
-      user : "ubuntu",
-      host : "52.78.1.51",
-      ref  : "origin/master",
-      repo : "git@github.com:hgu-act/UN-NGO-Conference-Companion.git",
-      path : "/home/ubuntu/UN-NGO-Conference-Companion",
+    "dev" : {
+      "user" : "ubuntu",
+      "host" : "52.78.1.51",
+      "ref"  : "origin/master",
+      "repo" : "git@github.com:hgu-act/UN-NGO-Conference-Companion.git",
+      "path" : "/home/ubuntu/UN-NGO-Conference-Companion",
       "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env dev",
-      env  : {
-        NODE_ENV: "dev"
+      "env"  : {
+        "NODE_ENV": "dev"
       }
     }
   }
