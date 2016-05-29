@@ -22,7 +22,7 @@
       "ref"  : "origin/master",
       "repo" : "git@github.com:hgu-act/UN-NGO-Conference-Companion.git",
       "path" : "/home/ubuntu/app",
-      "post-deploy" : "pm2 startOrRestart ecosystem.json --env production"
+      "post-deploy" : "npm install && bower install && pm2 startOrRestart ecosystem.json --env production"
     },
     "dev" : {
       "user" : "ubuntu",
