@@ -21,7 +21,7 @@
       "host" : "52.78.1.51",
       "ref"  : "origin/master",
       "repo" : "https://github.com/hgu-act/UN-NGO-Conference-Companion.git",
-      "path" : "/home/ubuntu/UN-NGO-Conference-Companion",
+      "path" : "/home/ubuntu",
       "post-deploy" : "npm install && bower install && pm2 startOrRestart ecosystem.json --env production"
     },
     "dev" : {
