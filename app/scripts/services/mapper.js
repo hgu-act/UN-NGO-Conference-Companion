@@ -42,12 +42,12 @@ angular.module('ngoConferenceCompanionApp')
     mentoring: {
       icon: 'restaurant',
       avatarColor: '#DFE0DA',
-      cardImgUrl: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/assets/intergenerational-mentoring-lunch.png'
+      cardImgUrl: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/assets/youth-breakfast.png'
     },
     reception: {
       icon: 'weekend',
       avatarColor: '#8A00A3',
-      cardImgUrl: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/assets/youth-breakfast.png'
+      cardImgUrl: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/assets/break-30m.png'
     },
     closing: {
       icon: 'mic',
