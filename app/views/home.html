@@ -33,85 +33,43 @@
       </md-card>
     </div>
     <div flex-gt-md="40">
-      <md-card flex="noshrink" ng-if="homeVM.currentEvent">
+      <md-card flex="noshrink" ng-repeat="event in homeVM.currentEvents">
         <div class="md-card-image mdl-card"
-             ng-style="{'background-image': 'url({{homeVM.mapper[homeVM.currentEvent.type].cardImgUrl}})'}" layout="row"
+             ng-style="{'background-image': 'url({{homeVM.mapper[event.type].cardImgUrl}})'}" layout="row"
              layout-align="start end">
           <span class="md-headline shadow" flex="100" ng-style="homeVM.cardImgTextStyle">Live Now</span>
         </div>
         <md-card-title>
           <md-card-title-text>
-            <span class="md-headline">{{homeVM.currentEvent.title}}</span>
+            <span class="md-headline">{{event.title}}</span>
           </md-card-title-text>
         </md-card-title>
         <md-card-content>
           <md-icon>access_time</md-icon>
-          <span class="md-caption">{{homeVM.currentEvent.startDate | date:'EEE, MMM d, HH:mm'}} - {{homeVM.currentEvent.endDate | date:'HH:mm'}} ({{homeVM.currentDuration}}')</span>
+          <span class="md-caption">{{event.startDate | date:'EEE, MMM d, HH:mm'}} - {{event.endDate | date:'HH:mm'}}</span>
           <md-icon>room</md-icon>
-          <span class="md-caption">{{homeVM.currentEvent.location}}</span>
+          <span class="md-caption">{{event.location}}</span>
         </md-card-content>
         <md-card-actions layout="row" layout-align="end center">
           <md-button class="md-primary" ng-href="#timetable">More</md-button>
         </md-card-actions>
       </md-card>
-      <md-card flex="noshrink" ng-if="homeVM.currentEventTwo">
+      <md-card flex="noshrink" ng-if="homeVM.nextEvents[0]">
         <div class="md-card-image mdl-card"
-             ng-style="{'background-image': 'url({{homeVM.mapper[homeVM.currentEventTwo.type].cardImgUrl}})'}" layout="row"
-             layout-align="start end">
-          <span class="md-headline shadow" flex="100" ng-style="homeVM.cardImgTextStyle">Live Now</span>
-        </div>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">{{homeVM.currentEventTwo.title}}</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-          <md-icon>access_time</md-icon>
-          <span class="md-caption">{{homeVM.currentEventTwo.startDate | date:'EEE, MMM d, HH:mm'}} - {{homeVM.currentEventTwo.endDate | date:'HH:mm'}} ({{homeVM.currentTwoDuration}}')</span>
-          <md-icon>room</md-icon>
-          <span class="md-caption">{{homeVM.currentEventTwo.location}}</span>
-        </md-card-content>
-        <md-card-actions layout="row" layout-align="end center">
-          <md-button class="md-primary" ng-href="#timetable">More</md-button>
-        </md-card-actions>
-      </md-card>
-      <md-card flex="noshrink" ng-if="homeVM.currentEventThree">
-        <div class="md-card-image mdl-card"
-             ng-style="{'background-image': 'url({{homeVM.mapper[homeVM.currentEventThree.type].cardImgUrl}})'}" layout="row"
-             layout-align="start end">
-          <span class="md-headline shadow" flex="100" ng-style="homeVM.cardImgTextStyle">Live Now</span>
-        </div>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">{{homeVM.currentEventThree.title}}</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-          <md-icon>access_time</md-icon>
-          <span class="md-caption">{{homeVM.currentEventThree.startDate | date:'EEE, MMM d, HH:mm'}} - {{homeVM.currentEventThree.endDate | date:'HH:mm'}} ({{homeVM.currentThreeDuration}}')</span>
-          <md-icon>room</md-icon>
-          <span class="md-caption">{{homeVM.currentEventThree.location}}</span>
-        </md-card-content>
-        <md-card-actions layout="row" layout-align="end center">
-          <md-button class="md-primary" ng-href="#timetable">More</md-button>
-        </md-card-actions>
-      </md-card>
-      <md-card flex="noshrink" ng-if="homeVM.nextEvent">
-        <div class="md-card-image mdl-card"
-             ng-style="{'background-image': 'url({{homeVM.mapper[homeVM.nextEvent.type].cardImgUrl}})'}" layout="row"
+             ng-style="{'background-image': 'url({{homeVM.mapper[homeVM.nextEvents[0].type].cardImgUrl}})'}" layout="row"
              layout-align="start end">
           <span class="md-headline shadow" ng-style="homeVM.cardImgTextStyle" flex="100">Next Agenda</span>
         </div>
         <md-card-title>
           <md-card-title-text>
-            <span class="md-headline">{{homeVM.nextEvent.title}}</span>
+            <span class="md-headline">{{homeVM.nextEvents[0].title}}</span>
           </md-card-title-text>
         </md-card-title>
         <md-card-content>
           <md-icon>access_time</md-icon>
-          <span class="md-caption">{{homeVM.nextEvent.startDate | date:'EEE, MMM d, HH:mm'}} - {{homeVM.nextEvent.endDate | date:'HH:mm'}} ({{homeVM.nextDuration}}')</span>
+          <span class="md-caption">{{homeVM.nextEvents[0].startDate | date:'EEE, MMM d, HH:mm'}} - {{homeVM.nextEvents[0].endDate | date:'HH:mm'}}</span>
           <md-icon>room</md-icon>
-          <span class="md-caption">{{homeVM.nextEvent.location}}</span>
+          <span class="md-caption">{{homeVM.nextEvents[0].location}}</span>
         </md-card-content>
         <md-card-actions layout="row" layout-align="end center">
           <md-button class="md-primary" ng-href="#timetable">More</md-button>
