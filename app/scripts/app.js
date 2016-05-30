@@ -75,9 +75,15 @@ angular
         controllerAs: 'roundtableDetailVM',
         resolve: {
           roundtableObj: function ($route, roundtableValue) {
-            return roundtableValue.find(function (roundtable) {
-              return roundtable.id == $route.current.params.id;
-            });
+            var rounds = [];
+            angular.forEach(roundtableValue, function (round) {
+              if (round.id == $route.current.params.id)
+                this.push(round);
+            }, rounds);
+            return rounds[0];
+            // return roundtableValue.find(function (roundtable) {
+            //   return roundtable.id == $route.current.params.id;
+            // });
           }
         }
       })
@@ -97,9 +103,15 @@ angular
         controllerAs: 'workshopDetailVM',
         resolve: {
           workshopObj: function ($route, workshopValue) {
-            return workshopValue[$route.current.params.sessionId].workshops.find(function (workshop) {
-              return workshop.id == $route.current.params.id;
-            });
+            var workshops = [];
+            angular.forEach(workshopValue[$route.current.params.sessionId].workshops, function (workshop) {
+              if (workshop.id == $route.current.params.id)
+                this.push(workshop);
+            }, workshops);
+            return workshops[0];
+            // return workshopValue[$route.current.params.sessionId].workshops.find(function (workshop) {
+            //   return workshop.id == $route.current.params.id;
+            // });
           },
           sessionId: function ($route) {
             return $route.current.params.sessionId;
