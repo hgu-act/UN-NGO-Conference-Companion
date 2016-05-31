@@ -18,9 +18,34 @@ angular.module('ngoConferenceCompanionApp')
       '<p>The roundtable will recommend concrete formal actions, such as through national education plans and international frameworks for policies and cooperation to improve education, and offer informal approaches including training, mentoring, social mobilization, building public awareness, and public and private partnerships to narrow access and quality gaps in education.</p>',
       files: [
         {
-          url: '',
-          icon: 'watch_later',
-          title: 'Available after Roundtable'
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable1/Bruce+Knotts_Script+(Roundtable+1).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Bruce Knotts_Script (Roundtable 1).pdf'
+        },
+        {
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable1/Chaechun+Gim_PowerPoint+(Roundtable+1).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Chaechun Gim_PowerPoint (Roundtable 1).pdf'
+        },
+        {
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable1/Daniela+Bas_Script+(Roundtable+1).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Daniela Bas_Script (Roundtable 1).pdf'
+        },
+        {
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable1/Myungsook+Cho_Script+(Roundtable+1).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Myungsook Cho_Script (Roundtable 1).pdf'
+        },
+        {
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable1/Omrie+Golley_Script+(Roundtable+1).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Omrie Golley_Script (Roundtable 1).pdf'
+        },
+        {
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable1/Robert+Ogburn_Outline+(Roundtable+1).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Robert Ogburn_Outline (Roundtable 1).pdf'
         }
       ]
     },
@@ -34,9 +59,19 @@ angular.module('ngoConferenceCompanionApp')
       '<p>Advances in information and communication technology (ICT) that offer major new opportunities for the delivery of innovative STEAM curricula to schools and educational centers around the world, rich and poor, will be discussed.</p>',
       files: [
         {
-          url: '',
-          icon: 'watch_later',
-          title: 'Available after Roundtable'
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable2/Saphira+Rameshfar_Script+(Roundtable+2).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Saphira Rameshfar_Script (Roundtable 2).pdf'
+        },
+        {
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable2/Seunghwan+Kim_PowerPoint+(Roundtable+2).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Seunghwan Kim_PowerPoint (Roundtable 2).pdf'
+        },
+        {
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable2/Virgilio+Andrade_PowerPoint+(Roundtable+2).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Virgilio Andrade_PowerPoint (Roundtable 2).pdf'
         }
       ]
     },
@@ -49,9 +84,34 @@ angular.module('ngoConferenceCompanionApp')
       '<p>The roundtable will also examine the disparity in the amounts that governments spend on military and education sectors, respectively, and highlight the economic and social benefits that higher budget allocations for primary and secondary education in particular promise.</p>',
       files: [
         {
-          url: '',
-          icon: 'watch_later',
-          title: 'Available after Roundtable'
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable3/Darren+Oh_Script+(Roundtable+3).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Darren Oh_Script (Roundtable 3).pdf'
+        },
+        {
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable3/Darren+Oh_Script_Korean+(Roundtable+3).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Darren Oh_Script_Korean (Roundtable 3).pdf'
+        },
+        {
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable3/Teopista+Birungi+Mayaja_Script+(Roundtable+3).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Teopista Birungi Mayaja_Script (Roundtable 3).pdf'
+        },
+        {
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable3/Wendy+Carbajal+Sotelo_PowerPoint+(Roundtable+3).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Wendy Carbajal Sotelo_PowerPoint (Roundtable 3).pdf'
+        },
+        {
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable3/Wendy+Carbajal+Sotelo_Script+(Roundtable+3).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Wendy Carbajal Sotelo_Script (Roundtable 3).pdf'
+        },
+        {
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable3/Yanghee+Lee_Script+(Roundtable+3).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Yanghee Lee_Script (Roundtable 3).pdf'
         }
       ]
     },
@@ -64,9 +124,24 @@ angular.module('ngoConferenceCompanionApp')
       '<p>In addition, this roundtable will address the pivotal role that increased access to sustainable energy will have in ensuring each person’s right to education, health, and a healthy environment.</p>',
       files: [
         {
-          url: '',
-          icon: 'watch_later',
-          title: 'Available after Roundtable'
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable4/Han+Shi_Script+(Roundtable+4).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Han Shi_Script (Roundtable 4).pdf'
+        },
+        {
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable4/Leonzo+Barreno_Script+(Roundtable+4).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Leonzo Barreno_Script (Roundtable 4).pdf'
+        },
+        {
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable4/Myungja+Kim_Script+(Roundtable+4).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Myungja Kim_Script (Roundtable 4).pdf'
+        },
+        {
+          url: 'https://s3.ap-northeast-2.amazonaws.com/ngo-app/roundtables/roundtable4/Tsui+Ling_Script+(Roundtable+4).pdf',
+          icon: 'picture_as_pdf',
+          title: 'Tsui Ling_Script (Roundtable 4).pdf'
         }
       ]
     },
