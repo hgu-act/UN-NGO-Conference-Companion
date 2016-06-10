@@ -44,5 +44,6 @@
   },
   "scripts": {
     "test": "karma start test/karma.conf.js"
-  }
+  },
+  "license": "GPL-3.0+"
 }
