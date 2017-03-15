@@ -10,7 +10,7 @@
 angular.module('ngoConferenceCompanionApp')
   .value('roundtableValue', [
     {
-      title: 'Roundtable 1',
+      title: 'Insider Talk 1',
       id: 1,
       topic: 'The Right to Accessible, Safe and Inclusive Learning Spaces',
       detail: '<p>Education must leave no one behind, and be accessible to all throughout life through quality learning opportunities. Too many of the world’s students and potential learners are explicitly denied, or subtly pushed away from, educational and training opportunities for reasons including their gender, gender identity, race, ethnicity, language, location, religion, sexual orientation, age, ability (or disability), or poverty.</p>' +
@@ -50,7 +50,7 @@ angular.module('ngoConferenceCompanionApp')
       ]
     },
     {
-      title: 'Roundtable 2',
+      title: 'Insider Talk 2',
       id: 2,
       topic: 'STEAM Should Power the SDGs',
       detail: '<p>Expanding opportunities for scientific training is an essential component of economic development for all nations. Science, technology, engineering, art, and math, or “STEAM,” is an interdisciplinary learning model that offers new opportunities for creating sustainable models of production and consumption, public health, urban design and infrastructure, water distribution, and food and energy production.</p>' +
@@ -76,7 +76,7 @@ angular.module('ngoConferenceCompanionApp')
       ]
     },
     {
-      title: 'Roundtable 3',
+      title: 'Insider Talk 3',
       id: 3,
       topic: 'Children and Youth: Tomorrow’s Global Citizens Today',
       detail: '<p>This conference acknowledges the centrality of SDG 4 as a driver for transformational change, and the primacy of educating children as the starting point for achieving all 17 SDGs. Enrollment in primary education in developing countries has reached 91 per cent, but 58 million children of primary school age, and 63 million children of lower secondary age remain out of school, with sub-Saharan Africa and conflict zones representing stubborn pockets of exclusion.</p>' +
@@ -116,7 +116,7 @@ angular.module('ngoConferenceCompanionApp')
       ]
     },
     {
-      title: 'Roundtable 4',
+      title: 'Insider Talk 4',
       id: 4,
       topic: 'Global Citizens as Stewards of the Planet: Energy, Environment and Climate Change',
       detail: '<p>In today’s era of climate change, global pollution, natural resource depletion, and threats to biodiversity, societies are reassessing the value placed on the natural environment and exploring how formal and informal education, training and grassroots advocacy can strengthen humankind’s capacities to exist on this planet.</p>' +
@@ -146,7 +146,7 @@ angular.module('ngoConferenceCompanionApp')
       ]
     },
     {
-      title: 'Special Roundtable',
+      title: 'Special Insider Talk',
       id: 5,
       topic: 'Local Development and Poverty Eradication for Global Citizenship',
       subtitle: 'Sharing the Saemaul Undong experience from Korea and other developing countries as a case study in eradicating poverty and nation building in support of the Sustainable Development Goals',

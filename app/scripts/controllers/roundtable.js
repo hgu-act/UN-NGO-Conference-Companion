@@ -11,6 +11,7 @@ angular.module('ngoConferenceCompanionApp')
   .controller('RoundtableCtrl', function (roundtableValue) {
     var roundtableVM = this;
 
-    roundtableVM.toolbarTitle = 'Roundtables';
+    roundtableVM.toolbarTitle = 'Insider Talk';
+    // roundtableVM.toolbarTitle = 'Roundtables';
     roundtableVM.lists = roundtableValue;
   });

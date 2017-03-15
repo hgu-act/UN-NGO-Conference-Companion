@@ -31,12 +31,12 @@ angular.module('ngoConferenceCompanionApp')
     },
     {
       url: 'roundtables',
-      title: 'Roundtables',
+      title: 'Insider Talk',
       icon: 'event_seat'
     },
     {
       url: 'workshops/0',
-      title: 'Workshops',
+      title: 'Tracks',
       icon: 'build'
     },
     {
@@ -48,10 +48,11 @@ angular.module('ngoConferenceCompanionApp')
       url: 'floor-plan',
       title: 'Floor Plan',
       icon: 'layers'
-    },
-    {
-      url: 'socialize',
-      title: '#UNNGO2016',
-      icon: 'timeline'
     }
+    // },
+    // {
+    //   url: 'socialize',
+    //   title: '#UNNGO2016',
+    //   icon: 'timeline'
+    // }
   ]);
