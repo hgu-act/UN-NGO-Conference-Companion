@@ -10,186 +10,142 @@
 angular.module('ngoConferenceCompanionApp')
   .value('timetableValue',[
     {
-      title: '05.30',
+      title: '04.27',
       schedules: [
         {
           id: 0,
           type: 'caucus',
-          title: 'Youth Caucus',
-          startDate: '2016-05-30T08:30+09:00',
-          endDate: '2016-05-30T09:45+09:00',
-          location: '203'
+          title: '등록',
+          startDate: '2017-04-27T09:30+09:00',
+          endDate: '',
+          location: ''
         },
         {
           id: 1,
-          type: 'opening',
-          title: 'Opening Session',
-          startDate: '2016-05-30T10:00+09:00',
-          endDate: '2016-05-30T12:00+09:00',
-          location: '300A\uFF65B'
+          type: 'caucus',
+          title: 'A 세션',
+          startDate: '2017-04-27T10:20+09:00',
+          endDate: '2017-04-27T12:00+09:00',
+          location: ''
         },
         {
           id: 2,
-          type: 'lunch',
-          title: 'Lunch',
-          startDate: '2016-05-30T12:00+09:00',
-          endDate: '2016-05-30T13:30+09:00',
-          location: '2\uFF653F Meeting rooms and lobby'
+          type: 'caucus',
+          title: '중식',
+          startDate: '2017-04-27T12:00+09:00',
+          endDate: '2017-04-27T13:10+09:00',
+          location: ''
         },
         {
           id: 3,
-          type: 'roundtable',
-          title: 'Roundtable 1',
-          startDate: '2016-05-30T13:30+09:00',
-          endDate: '2016-05-30T15:00+09:00',
-          location: '300A\uFF65B'
+          type: 'caucus',
+          title: 'B 세션',
+          startDate: '2017-04-27T13:10+09:00',
+          endDate: '2017-04-27T14:50+09:00',
+          location: ''
         },
         {
           id: 4,
-          type: 'roundtable',
-          title: 'Roundtable 2',
-          startDate: '2016-05-30T15:15+09:00',
-          endDate: '2016-05-30T16:45+09:00',
-          location: '300A\uFF65B'
+          type: 'caucus',
+          title: '개회식 - 기조/초청 강연',
+          startDate: '2017-04-27T15:00+09:00',
+          endDate: '2017-04-27T16:20+09:00',
+          location: ''
         },
         {
           id: 5,
-          type: 'townhall',
-          title: 'Townhall Meeting 1',
-          startDate: '2016-05-30T15:15+09:00',
-          endDate: '2016-05-30T16:45+09:00',
-          location: '205'
+          type: 'caucus',
+          title: '개회식 - 기조/초청 강연',
+          startDate: '2017-04-27T15:00+09:00',
+          endDate: '2017-04-27T16:20+09:00',
+          location: ''
         },
         {
           id: 6,
-          type: 'workshop',
-          title: 'Workshop 1',
-          startDate: '2016-05-30T17:30+09:00',
-          endDate: '2016-05-30T18:45+09:00',
-          location: '101 ~ 104, 106, 201 ~ 206, 300A\uFF65B'
-        }
-      ]
-    },
-    {
-      title: '05.31',
-      schedules: [
+          type: 'caucus',
+          title: 'C 세션',
+          startDate: '2017-04-27T16:30+09:00',
+          endDate: '2017-04-27T18:10+09:00',
+          location: ''
+        },
         {
           id: 7,
           type: 'caucus',
-          title: 'Youth Caucus',
-          startDate: '2016-05-31T07:30+09:00',
-          endDate: '2016-05-31T08:45+09:00',
-          location: '205'
-        },
-        {
-          id: 8,
-          type: 'workshop',
-          title: 'Workshop 2',
-          startDate: '2016-05-31T09:00+09:00',
-          endDate: '2016-05-31T10:15+09:00',
-          location: '101 ~ 104, 106, 201 ~ 206, 300A\uFF65B'
-        },
-        {
-          id: 9,
-          type: 'roundtable',
-          title: 'Roundtable 3',
-          startDate: '2016-05-31T10:30+09:00',
-          endDate: '2016-05-31T12:00+09:00',
-          location: '300A\uFF65B'
-        },
-        {
-          id: 10,
-          type: 'townhall',
-          title: 'Townhall Meeting 2',
-          startDate: '2016-05-31T10:30+09:00',
-          endDate: '2016-05-31T12:00+09:00',
-          location: '205'
-        },
-        {
-          id: 11,
-          type: 'lunch',
-          title: 'Lunch',
-          startDate: '2016-05-31T12:00+09:00',
-          endDate: '2016-05-31T13:45+09:00',
-          location: '2\uFF653F Meeting rooms and lobby'
-        },
-        {
-          id: 12,
-          type: 'mentoring',
-          title: 'Intergenerational Mentoring Event',
-          startDate: '2016-05-31T12:00+09:00',
-          endDate: '2016-05-31T13:30+09:00',
-          location: '101'
-        },
-        {
-          id: 13,
-          type: 'townhall',
-          title: 'Townhall Meeting 3',
-          startDate: '2016-05-31T13:00+09:00',
-          endDate: '2016-05-31T15:00+09:00',
-          location: '205'
-        },
-        {
-          id: 14,
-          type: 'roundtable',
-          title: 'Roundtable 4',
-          startDate: '2016-05-31T13:45+09:00',
-          endDate: '2016-05-31T15:15+09:00',
-          location: '300A\uFF65B'
-        },
-        {
-          id: 15,
-          type: 'workshop',
-          title: 'Workshop 3',
-          startDate: '2016-05-31T15:45+09:00',
-          endDate: '2016-05-31T17:00+09:00',
-          location: '101 ~ 104, 106, 201 ~ 206, 300A\uFF65B'
-        },
-        {
-          id: 16,
-          type: 'roundtable',
-          title: 'Special Roundtable',
-          startDate: '2016-05-31T17:15+09:00',
-          endDate: '2016-05-31T18:45+09:00',
-          location: '300A\uFF65B'
-        },
-        {
-          id: 17,
-          type: 'reception',
-          title: 'Reception',
-          startDate: '2016-05-31T19:00+09:00',
-          endDate: '2016-05-31T20:30+09:00',
-          location: '2\uFF653F Meeting rooms and lobby'
+          title: '리셉션',
+          startDate: '',
+          endDate: '',
+          location: ''
         }
       ]
     },
-    {
-      title: '06.01',
+   {
+      title: '04.28',
       schedules: [
         {
-          id: 18,
+          id: 0,
           type: 'caucus',
-          title: 'Youth Caucus',
-          startDate: '2016-06-01T07:30+09:00',
-          endDate: '2016-06-01T08:45+09:00',
-          location: '205'
+          title: '등록',
+          startDate: '2017-04-28T09:20+09:00',
+          endDate: '',
+          location: ''
         },
         {
-          id: 19,
-          type: 'workshop',
-          title: 'Workshop 4',
-          startDate: '2016-06-01T09:00+09:00',
-          endDate: '2016-06-01T10:15+09:00',
-          location: '101 ~ 104, 106, 201 ~ 206'
+          id: 1,
+          type: 'caucus',
+          title: '한국시뮬레이션학회 :제 17회 한국 대학생 컴퓨터 시뮬레이션 경진대회',
+          startDate: '2017-04-28T09:00+09:00',
+          endDate: '2017-04-28T17:00+09:00',
+          location: ''
         },
         {
-          id: 20,
-          type: 'closing',
-          title: 'Closing Session',
-          startDate: '2016-06-01T10:30+09:00',
-          endDate: '2016-06-01T12:30+09:00',
-          location: '300A\uFF65B'
+          id: 2,
+          type: 'caucus',
+          title: 'D 세션',
+          startDate: '2017-04-28T09:00+09:00',
+          endDate: '2017-04-28T10:40+09:00',
+          location: ''
+        },
+        {
+          id: 3,
+          type: 'caucus',
+          title: 'Coffee Break',
+          startDate: '2017-04-28T10:40+09:00',
+          endDate: '2017-04-28T10:50+09:00',
+          location: ''
+        },
+        {
+          id: 4,
+          type: 'caucus',
+          title: 'E 세션',
+          startDate: '2017-04-28T10:50+09:00',
+          endDate: '2017-04-28T12:30+09:00',
+          location: ''
+        },
+        {
+          id: 5,
+          type: 'caucus',
+          title: '중식',
+          startDate: '2017-04-28T12:30+09:00',
+          endDate: '2017-04-28T13:30+09:00',
+          location: ''
+        },
+        {
+          id: 6,
+          type: 'caucus',
+          title: 'F 세션',
+          startDate: '2017-04-28T13:30+09:00',
+          endDate: '2017-04-28T15:10+09:00',
+          location: ''
+        },
+        {
+          id: 7,
+          type: 'caucus',
+          title: 'G 세션',
+          startDate: '2017-04-28T15:20+09:00',
+          endDate: '2017-04-28T17:00+09:00',
+          location: ''
         }
+       
       ]
     }
   ]);
