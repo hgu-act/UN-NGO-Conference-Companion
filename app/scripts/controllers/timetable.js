@@ -14,7 +14,7 @@ angular.module('ngoConferenceCompanionApp')
     timetableVM.activeTab = today();
     timetableVM.mapper = mapper;
     timetableVM.timetables = timetableValue;
-    timetableVM.toolbarTitle = 'Timetable';
+    timetableVM.toolbarTitle = '일정';
 
     function today() {
       var today = new Date();

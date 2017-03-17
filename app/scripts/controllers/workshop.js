@@ -13,6 +13,6 @@ angular.module('ngoConferenceCompanionApp')
 
     workshopVM.activeTab = activeTab;
     // workshopVM.toolbarTitle = 'Workshops';
-    workshopVM.toolbarTitle = 'Tracks';
+    workshopVM.toolbarTitle = '트랙';
     workshopVM.sessions = workshopValue;
   });

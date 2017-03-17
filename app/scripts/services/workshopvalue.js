@@ -56,7 +56,7 @@ angular.module('ngoConferenceCompanionApp')
         },
         {
           topic: 'A8. 특별세션',
-          sponsor: 'ADD (6편)',
+          sponsor: '',
           location: '',
           id: 3
         },

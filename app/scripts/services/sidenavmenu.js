@@ -11,17 +11,17 @@ angular.module('ngoConferenceCompanionApp')
   .value('sideNavMenu', [
     {
       url: 'home',
-      title: 'Home',
+      title: '홈',
       icon: 'dashboard'
     },
     {
       url: 'timetable',
-      title: 'Timetable',
+      title: '일정',
       icon: 'list'
     },
     {
       url: 'workshops/0',
-      title: 'Tracks',
+      title: '트랙',
       icon: 'build'
     }
     // {

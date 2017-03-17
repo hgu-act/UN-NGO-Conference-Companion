@@ -15,7 +15,7 @@ angular.module('ngoConferenceCompanionApp')
     var now = today.getTime();
     homeVM.currentEvents = [];
 
-    homeVM.toolbarTitle = 'Home';
+    homeVM.toolbarTitle = '홈';
     homeVM.cardImgTextStyle = {
       'color': 'white',
       'padding': '16px'
