@@ -24,6 +24,7 @@ angular.module('ngoConferenceCompanionApp')
           id: 1,
           type: 'caucus',
           title: 'A 세션',
+          sessionId: '0',
           startDate: '2017-04-27T10:20+09:00',
           endDate: '2017-04-27T12:00+09:00',
           location: ''
@@ -40,6 +41,7 @@ angular.module('ngoConferenceCompanionApp')
           id: 3,
           type: 'caucus',
           title: 'B 세션',
+          sessionId: '1',
           startDate: '2017-04-27T13:10+09:00',
           endDate: '2017-04-27T14:50+09:00',
           location: ''
@@ -64,6 +66,7 @@ angular.module('ngoConferenceCompanionApp')
           id: 6,
           type: 'caucus',
           title: 'C 세션',
+          sessionId: '2',
           startDate: '2017-04-27T16:30+09:00',
           endDate: '2017-04-27T18:10+09:00',
           location: ''
@@ -101,6 +104,7 @@ angular.module('ngoConferenceCompanionApp')
           id: 2,
           type: 'caucus',
           title: 'D 세션',
+          sessionId: '3',
           startDate: '2017-04-28T09:00+09:00',
           endDate: '2017-04-28T10:40+09:00',
           location: ''
@@ -117,6 +121,7 @@ angular.module('ngoConferenceCompanionApp')
           id: 4,
           type: 'caucus',
           title: 'E 세션',
+          sessionId: '4',
           startDate: '2017-04-28T10:50+09:00',
           endDate: '2017-04-28T12:30+09:00',
           location: ''
@@ -133,6 +138,7 @@ angular.module('ngoConferenceCompanionApp')
           id: 6,
           type: 'caucus',
           title: 'F 세션',
+          sessionId: '5',
           startDate: '2017-04-28T13:30+09:00',
           endDate: '2017-04-28T15:10+09:00',
           location: ''
@@ -141,11 +147,12 @@ angular.module('ngoConferenceCompanionApp')
           id: 7,
           type: 'caucus',
           title: 'G 세션',
+          sessionId: '6',
           startDate: '2017-04-28T15:20+09:00',
           endDate: '2017-04-28T17:00+09:00',
           location: ''
         }
-       
+
       ]
     }
   ]);

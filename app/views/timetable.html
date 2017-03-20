@@ -19,10 +19,16 @@
            md-swipe-content flex="100" md-selected="timetableVM.activeTab">
     <md-tab ng-repeat="timetable in timetableVM.timetables" label="{{timetable.title}}">
       <md-list flex>
-        <md-list-item class="md-2-line" ng-repeat="item in timetable.schedules" flex="100">
+        <md-list-item
+            class="md-2-line"
+            ng-repeat="item in timetable.schedules"
+            flex="100"
+            md-ink-ripple>
+
           <md-icon class="md-avatar-icon" ng-style="{'background-color': timetableVM.mapper[item.type].avatarColor}">
             {{timetableVM.mapper[item.type].icon}}
           </md-icon>
+
           <div class="md-list-item-text" layout="row" flex="100" layout-margin>
             <div layout="column">
               <p>{{item.startDate | date:'HH:mm'}}</p>
@@ -32,14 +38,18 @@
               <span>{{item.title}}</span>
               <p>{{item.location}}</p>
             </div>
+            <md-button ng-if="item.sessionId" class="md-secondary md-icon-button" ng-href="#workshops/{{item.sessionId}}">
+              <md-icon>launch</md-icon>
+            </md-button>
           </div>
+
           <md-divider md-inset ng-if="!$last"></md-divider>
         </md-list-item>
       </md-list>
     </md-tab>
   </md-tabs>
   <div layout="row" flex="100" flex-gt-lg="70" hide show-gt-md>
-    <div layout="column" flex="33" ng-repeat="timetable in timetableVM.timetables">
+    <div layout="column" flex="50" ng-repeat="timetable in timetableVM.timetables">
       <md-card flex="noshrink">
         <md-card-header>
           <md-card-header-text>
@@ -47,7 +57,11 @@
           </md-card-header-text>
         </md-card-header>
         <md-list flex>
-          <md-list-item class="md-2-line" ng-repeat="item in timetable.schedules" flex="100">
+          <md-list-item
+              class="md-2-line"
+              ng-repeat="item in timetable.schedules"
+              flex="100"
+              md-ink-ripple>
             <md-icon class="md-avatar-icon" ng-style="{'background-color': timetableVM.mapper[item.type].avatarColor}">
               {{timetableVM.mapper[item.type].icon}}
             </md-icon>
@@ -60,6 +74,9 @@
                 <span>{{item.title}}</span>
                 <p>{{item.location}}</p>
               </div>
+              <md-button ng-if="item.sessionId" class="md-secondary md-icon-button" ng-href="#workshops/{{item.sessionId}}">
+                <md-icon>launch</md-icon>
+              </md-button>
             </div>
             <md-divider md-inset ng-if="!$last"></md-divider>
           </md-list-item>

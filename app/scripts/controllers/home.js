@@ -10,7 +10,7 @@
 angular.module('ngoConferenceCompanionApp')
   .controller('HomeCtrl', function (resource, $log, timeAgo, mapper, timetableValue) {
     var homeVM = this;
-    var events = timetableValue[0].schedules.concat(timetableValue[1].schedules, timetableValue[2].schedules);
+    var events = timetableValue[0].schedules.concat(timetableValue[1].schedules);
     var today = new Date();
     var now = today.getTime();
     homeVM.currentEvents = [];
