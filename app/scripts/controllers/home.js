@@ -24,7 +24,8 @@ angular.module('ngoConferenceCompanionApp')
     // homeVM.currentEventTwo = getCurrentEventTwo(homeVM.currentEvent);
     // homeVM.currentEventThree = getCurrentEventThree(homeVM.currentEvent, homeVM.currentEventTwo);
     homeVM.nextEvents = [];
-    homeVM.list = resource.notice.query();
+    // homeVM.list = resource.notice.query();
+    homeVM.list = null;
     homeVM.mapper = mapper;
 
     // homeVM.currentDuration = getDuration(homeVM.currentEvent);
