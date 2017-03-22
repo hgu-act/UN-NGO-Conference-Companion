@@ -7,8 +7,8 @@
   </div>
 </md-toolbar>
 <md-content id="primary-col" layout="row" layout-align="center start" md-colors="{{appVM.backgroundColors}}" flex="100">
-  <div layout="column" layout-gt-md="row" flex-gt-xs="70" flex-xs="100">
-    <div flex-gt-md="60">
+  <div layout="column" layout-gt-sm="row" flex="100" flex-gt-md="70">
+    <div flex-gt-sm="50">
       <md-card>
         <md-card-title>
           <md-card-title-text>
@@ -32,7 +32,7 @@
         </md-card-actions>
       </md-card>
     </div>
-    <div flex-gt-md="40">
+    <div flex-gt-sm="50">
       <md-card flex="noshrink" ng-repeat="event in homeVM.currentEvents">
         <div class="md-card-image mdl-card"
              ng-style="{'background-image': 'url({{homeVM.mapper[event.type].cardImgUrl}})'}" layout="row"
