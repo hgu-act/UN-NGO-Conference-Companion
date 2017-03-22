@@ -51,7 +51,7 @@
           <span class="md-caption">{{event.location}}</span>
         </md-card-content>
         <md-card-actions layout="row" layout-align="end center">
-          <md-button class="md-primary" ng-href="#timetable">More</md-button>
+          <md-button ng-if="event.sessionId" class="md-primary" ng-href="#workshops/{{event.sessionId}}">More</md-button>
         </md-card-actions>
       </md-card>
       <md-card flex="noshrink" ng-if="homeVM.nextEvents[0]">
@@ -72,7 +72,7 @@
           <span class="md-caption">{{homeVM.nextEvents[0].location}}</span>
         </md-card-content>
         <md-card-actions layout="row" layout-align="end center">
-          <md-button class="md-primary" ng-href="#timetable">More</md-button>
+          <md-button ng-if="homeVM.nextEvents[0].sessionId" class="md-primary" ng-href="#workshops/{{homeVM.nextEvents[0].sessionId}}">More</md-button>
         </md-card-actions>
       </md-card>
     </div>
