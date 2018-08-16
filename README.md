@@ -1,10 +1,10 @@
 # NGO Conference Companion
 
-This project is a information web app for the 66th UN DPI/NGO Conference.
+The offical information web app for the 66th UN DPI/NGO Conference.
 
-## Build & development
+## Role
 
-Run `grunt` for building and `grunt serve` for preview.
+UN NGO Conference Companion Web Application, a web-based information system that provides comprehensive information on the 66th UN NGO Conference and provides users with timely and up-to-date information on the latest news and SNS timelines.
 
 # Site Preview
 
